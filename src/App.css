@@ -1,32 +1,24 @@
+
 .App {
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 20vmin;
   pointer-events: none;
 }
+/* styling for the size of the logo */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
-.App-header {
-  background-color: #2a272c;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
+/* media query with a preference for motion sensitivity */
+/* this will run the animation defined below with a specific speed of 20 seconds to complete */
 
 @keyframes App-logo-spin {
   from {
@@ -36,7 +28,29 @@
     transform: rotate(360deg);
   }
 }
+/* defines the animation, which is a spin with a starting and ending point */
 
+.App-header {
+  background-color: #250f5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  flex-grow: 1;
+  font-size: calc(10px + 2vmin);
+  color: rgb(176, 143, 232);
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
 
 .custom-shape-divider-top-1686094685 {
   position: absolute;
@@ -45,4 +59,58 @@
   width: 100%;
   overflow: hidden;
   line-height: 0;
+  fill: rgb(176, 143, 232);
+  z-index: 2;
 }
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.content-container-header {
+  flex-grow: 1;
+}
+
+.navbar {
+  background-color: #250f5a;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style: none; /* gets rid of bullet points */
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.navbar a {
+  text-decoration: none; /* gets rid of underlining for links - might want to keep though */
+  color: white;
+}
+
+/* 
+.main-container {
+  background-color: #2a272c;
+  flex-grow: 1;
+  padding-top: 20px;
+}
+
+.navbar {
+  background-color: #2a272c;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.content-container-header {
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
