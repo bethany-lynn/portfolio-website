@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import Home from './Home';
 import { BrowserRouter } from 'react-router-dom';
+import BottomBar from './BottomBar';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Home />
       </main>
+      <BottomBar />
     </div>
     </BrowserRouter>
   );
