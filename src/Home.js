@@ -8,8 +8,12 @@ function Home() {
       <div className="home-container">
         <Navbar />
           <div className="content-container-header">
-            {/* <h1>Homepage header</h1> */}
-              {/* Add more content here */}
+            <h1>Bethany Winter</h1>
+              <h2>Full Stack Software Engineer</h2>
+              <p>sample text</p>
+          </div>
+          <div className="content-container-body">
+            <>more content</>
           </div>
     </div>
     );

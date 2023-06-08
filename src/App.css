@@ -66,12 +66,33 @@
 .home-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.content-container-header, .content-container-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: rgb(140, 242, 216);
+  z-index: 2;
+}
+
+
+/* 
+.home-container {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
 .content-container-header {
   flex-grow: 1;
-}
+} */
 
 .navbar {
   background-color: #250f5a;
