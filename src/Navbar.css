@@ -1,8 +1,10 @@
 .navbar {
-    background-color: #250f5a;
+    /* background-color: #250f5a; */
     position: sticky;
     top: 0;
-    z-index: 1;
+    display: flex;
+    justify-content: center;
+    /* z-index: 1; */
   }
   
   .navbar ul {
@@ -16,4 +18,16 @@
   .navbar a {
     text-decoration: none; /* gets rid of underlining for links - might want to keep though */
     color: white;
+  }
+
+  .custom-shape-divider-top-1686094685 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* width: 100%; */
+    overflow: hidden;
+    line-height: 0;
+    fill: rgb(81, 245, 226);
+    z-index: 2;
+    min-width: 100vw;
   }

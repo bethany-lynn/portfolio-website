@@ -1,19 +1,19 @@
 import React from 'react';
-import Navbar from './Navbar'; 
-// Home component for homepage edits
 
+// Home component for homepage edits
+// using navbar.css because its in the navbar - less files
 
 function Home() {
     return (
       <div className="home-container">
-        <Navbar />
+        {/* <Navbar /> */}
           <div className="content-container-header">
             <h1>Bethany Winter</h1>
               <h2>Full Stack Software Engineer</h2>
-              <p>sample text</p>
+              <p>very hire-able, very cool</p>
           </div>
           <div className="content-container-body">
-            <>more content</>
+            <>put stuff here bethany</>
           </div>
     </div>
     );

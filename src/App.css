@@ -1,20 +1,31 @@
+body {
+  background-color: #aa93e1;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* changes the calculations of the box */
 
 .App {
   text-align: center;
   min-height: 100vh;
+  width: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
   height: 20vmin;
   pointer-events: none;
+  display: flex;
 }
 /* styling for the size of the logo */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 /* media query with a preference for motion sensitivity */
@@ -31,36 +42,18 @@
 /* defines the animation, which is a spin with a starting and ending point */
 
 .App-header {
-  background-color: #250f5a;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  flex-grow: 1;
   font-size: calc(10px + 2vmin);
   color: rgb(176, 143, 232);
-  min-height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
 }
-
 
 .App-link {
   color: #61dafb;
-}
-
-.custom-shape-divider-top-1686094685 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  fill: rgb(176, 143, 232);
-  z-index: 2;
 }
 
 .home-container {
@@ -71,7 +64,8 @@
   min-height: 100vh;
 }
 
-.content-container-header, .content-container-body {
+.content-container-header, 
+.content-container-body {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -79,45 +73,5 @@
   justify-content: center;
   text-align: center;
   color: rgb(140, 242, 216);
-  z-index: 2;
+  /* z-index: 2; */
 }
-
-
-/* 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-.content-container-header {
-  flex-grow: 1;
-} */
-
-
-
-
-
-
-
-/* 
-.main-container {
-  background-color: #2a272c;
-  flex-grow: 1;
-  padding-top: 20px;
-}
-
-.navbar {
-  background-color: #2a272c;
-  position: sticky;
-  top: 0;
-  width: 100%;
-  z-index: 1;
-}
-
-.content-container-header {
-  padding-top: 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-} */
