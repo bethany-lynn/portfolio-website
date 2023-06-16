@@ -9,7 +9,7 @@ body {
 
 .App {
   text-align: center;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: auto;
   display: flex;
   flex-direction: column;
@@ -46,32 +46,12 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20px;
-  font-size: calc(10px + 2vmin);
-  color: rgb(176, 143, 232);
+  padding: 10px;
+  font-size: calc(5px + 2vmin);
+  color: rgb(0, 0, 0);
   width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-}
-
-.content-container-header, 
-.content-container-body {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: rgb(140, 242, 216);
-  /* z-index: 2; */
-}
+/* .App-link {
+  color: #000000;
+} */

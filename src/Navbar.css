@@ -1,14 +1,34 @@
 .navbar {
-    /* background-color: #250f5a; */
+    background-color: #aa93e1;
+    /* background-image: linear-gradient(180deg, #aa93e1, transparent); */
     position: sticky;
     top: 0;
     display: flex;
     justify-content: center;
-    /* z-index: 1; */
+    z-index: 2;
   }
   
   .navbar ul {
-    list-style: none; /* gets rid of bullet points */
+    list-style: none;
+    padding: 0;
+  }
+  
+  .navbar ul li {
+    position: relative;
+    padding-left: 25px;
+  }
+  
+  .navbar ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    background-image: url(https://static.thenounproject.com/png/1670710-200.png);
+    background-size: cover;
+    /* filter: brightness(0) invert(1); */
   }
   
   .navbar li {
@@ -16,7 +36,7 @@
   }
   
   .navbar a {
-    text-decoration: none; /* gets rid of underlining for links - might want to keep though */
+    text-decoration: underline; /* gets rid of underlining for links - might want to keep though */
     color: white;
   }
 
@@ -27,7 +47,7 @@
     /* width: 100%; */
     overflow: hidden;
     line-height: 0;
-    fill: rgb(81, 245, 226);
-    z-index: 2;
+    fill: rgba(77, 117, 226, 0.578);
+    /* z-index: 2; */
     min-width: 100vw;
   }

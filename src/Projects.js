@@ -5,7 +5,7 @@ import './Navbar.css'
 function Projects() {
   return (
     <div>
-      <h1>Projects</h1>
+      <h1>Projects to display</h1>
       {/* Add your project content, images, descriptions, etc. */}
     </div>
   );
