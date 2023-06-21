@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar'; 
 import Projects from './Projects';
 import CareerLore from './CareerLore';
@@ -12,8 +12,24 @@ import { Route, Routes } from 'react-router-dom';
 
 
 function App() {
+  const [backgroundColor, setBackgroundColor] = useState('#c285f5');
+
+  const changeColors = () => {
+    const newColor = getRandomColor();
+    setBackgroundColor(newColor);
+  };
+
+  const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+
   return (
-    <div>
+    <div style={{ backgroundColor }}>
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />}/>
@@ -24,11 +40,11 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          work in progress - this is app.js
+          work in progress - this is App.js - these things show up on every page
         </p>
       </header>
-        {/* <Home /> */}
       <BottomBar />
+      <button onClick={changeColors}>Change Color</button>
     </div>
     </div>
   );
