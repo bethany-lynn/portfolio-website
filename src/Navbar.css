@@ -1,6 +1,5 @@
 .navbar {
     background-color: #c285f5;
-    /* background-image: linear-gradient(180deg, #aa93e1, transparent); */
     position: sticky;
     top: 0;
     display: flex;
@@ -26,9 +25,8 @@
     transform: translateY(-50%);
     width: 20px; /* Adjust the width as needed */
     height: 20px; /* Adjust the height as needed */
-    background-image: url(https://static.thenounproject.com/png/1670710-200.png);
+    background-image: url(https://static.thenounproject.com/png/1670710-200.png); /* heart icons */
     background-size: cover;
-    /* filter: brightness(0) invert(1); */
   }
   
   .navbar li {
@@ -36,11 +34,11 @@
   }
   
   .navbar a {
-    text-decoration: underline; /* gets rid of underlining for links - might want to keep though */
+    text-decoration: underline;
     color: white;
   }
 
-  .custom-shape-divider-top-1686094685 {
+  .squiggle-shape {
     position: absolute;
     top: 0;
     left: 0;
