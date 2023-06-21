@@ -9,7 +9,6 @@ import logo from './logo.svg';
 import Home from './Home';
 import BottomBar from './BottomBar';
 import { Route, Routes } from 'react-router-dom';
-// telling browser which components are pages
 
 
 function App() {
@@ -19,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/projects" element={<Projects />} />
-        <Route path="/CareerLore" element={<CareerLore/>} />
+        <Route path="/career" element={<CareerLore />} />
       </Routes>
     <div className="App">
       <header className="App-header">
@@ -28,7 +27,7 @@ function App() {
           work in progress - this is app.js
         </p>
       </header>
-        <Home />
+        {/* <Home /> */}
       <BottomBar />
     </div>
     </div>

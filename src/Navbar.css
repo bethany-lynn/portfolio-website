@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #aa93e1;
+    background-color: #c285f5;
     /* background-image: linear-gradient(180deg, #aa93e1, transparent); */
     position: sticky;
     top: 0;
@@ -44,10 +44,8 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 100%; */
     overflow: hidden;
     line-height: 0;
-    fill: rgba(77, 117, 226, 0.578);
-    /* z-index: 2; */
+    fill: rgba(255, 47, 29, 0.582);
     min-width: 100vw;
   }

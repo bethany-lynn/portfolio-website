@@ -1,15 +1,13 @@
 body {
-  background-color: #aa93e1;
+  background-color:#c285f5;
 }
 
 * {
   box-sizing: border-box;
 }
-/* changes the calculations of the box */
 
 .App {
   text-align: center;
-  /* min-height: 100vh; */
   width: auto;
   display: flex;
   flex-direction: column;
@@ -21,15 +19,12 @@ body {
   pointer-events: none;
   display: flex;
 }
-/* styling for the size of the logo */
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;
   }
 }
-/* media query with a preference for motion sensitivity */
-/* this will run the animation defined below with a specific speed of 20 seconds to complete */
 
 @keyframes App-logo-spin {
   from {
@@ -39,7 +34,6 @@ body {
     transform: rotate(360deg);
   }
 }
-/* defines the animation, which is a spin with a starting and ending point */
 
 .App-header {
   display: flex;
@@ -48,10 +42,10 @@ body {
   justify-content: center;
   padding: 10px;
   font-size: calc(5px + 2vmin);
-  color: rgb(0, 0, 0);
+  /* color: rgb(0, 0, 0); */
   width: 100%;
 }
 
-/* .App-link {
-  color: #000000;
-} */
+ .App-link {
+  color: #AE1EEB;
+} 
