@@ -1,9 +1,9 @@
 import React from 'react';
-import './Navbar.css'
+import './CareerLore.css'
 
 function CareerLore() {
     return (
-        <div>
+        <div className='career-lore-body'>
             <h1>Career Lore</h1>
 
         </div>

@@ -1,0 +1,9 @@
+.career-lore-body {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* color: rgb(24, 5, 42); */
+  }

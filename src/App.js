@@ -40,7 +40,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          work in progress - this is App.js - these things show up on every page
+          {/* things here show up on every page */}
         </p>
       </header>
       <BottomBar />

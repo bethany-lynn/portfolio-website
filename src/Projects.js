@@ -1,11 +1,11 @@
 import React from 'react';
-import './Navbar.css'
+import './Projects.css'
 
 function Projects() {
   return (
-    <div>
+    <div className='projects-body'>
       <h1>Projects to display</h1>
-      
+      add links to project demos or repos
     </div>
   );
 }
