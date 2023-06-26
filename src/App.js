@@ -4,6 +4,8 @@ import Projects from './Projects';
 import CareerLore from './CareerLore';
 
 import './App.css';
+import './Navbar.css';
+
 
 import logo from './logo.svg';
 import Home from './Home';
@@ -17,16 +19,19 @@ function App() {
       name: 'Theme 1',
       backgroundColor: '#c285f5',
       textColor: '#FFC8FB',
+      squiggleColor: '#CFBFF7',
     },
     {
       name: 'Theme 2',
       backgroundColor: '#1B512D',
       textColor: '#B1CF5F',
+      squiggleColor: '#BFF0D4',
     },
     {
       name: 'Theme 3',
       backgroundColor: '#383B53',
       textColor: '#D4D6B9',
+      squiggleColor: '#C0E0DE',
     },
   ];
 
@@ -40,7 +45,7 @@ function App() {
 
   return (
     <div style={{ backgroundColor: theme.backgroundColor, color: theme.textColor }}>
-    <Navbar />
+    <Navbar squiggleColor={theme.squiggleColor} />
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/projects" element={<Projects />} />
