@@ -16,41 +16,82 @@
   text-align: center;
 }
 
-
-.h1 {
-  background-color: conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
+.home-container h1 {
+  --bg-size: 400%;
+  --color-one: hsl(295, 100%, 83%);
+  --color-two: hsl(240, 97%, 70%);
+  --color-three: hsl(175, 100%, 66%);
+  --color-four: hsl(138, 100%, 62%);
+  --color-five: hsl(62, 93%, 57%);
+  --color-six: hsl(36, 94%, 67%);
+  --color-seven: hsl(299, 100%, 65%);
+  font-size: clamp(2rem, 15vmin, 6rem);
+  background: linear-gradient(
+    90deg,
+    var(--color-one),
+    var(--color-two),
+    var(--color-three),
+    var(--color-four),
+    var(--color-five),
+    var(--color-six),
+    var(--color-seven),
+    var(--color-six),
+    var(--color-five),
+    var(--color-four),
+    var(--color-three),
+    var(--color-two),
+    var(--color-one)
+  ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: move-bg 10s infinite linear;
 }
-/* 
 
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-}
 
-.content-container-header {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-bottom: 1px solid #ccc;
-}
-
-.content-container-body {
-  font-size: 24px;
-  font-weight: bold;
-  color: white;
-  animation: gradientColor 5s linear infinite;
-}
-
-@keyframes gradientColor {
+@keyframes move-bg {
   0% {
-    background-color: #f0f0f0;
-  }
-  50% {
-    background-color: #c0c0c0;
+    background-position: 0% 0;
   }
   100% {
-    background-color: #f0f0f0;
+    background-position: 100% 0;
   }
+}
+
+
+/* #63b9ff,
+#6170fa,
+#a87aec,
+#9635eb, */
+
+/* 
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-container h1 {
+  text-rendering: auto;
+  background-image: conic-gradient(
+    from -90deg at 25% 115%,
+    #a5f675,
+    #60f799,
+    #00f0f4,
+    #d440b6,
+    #f29c72,
+    #e7ad6a
+  );
+  background-size: 8000% 8000%;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnimation 15s linear infinite;
+  font-family: Quicksand;
 } */
