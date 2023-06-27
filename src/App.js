@@ -17,19 +17,19 @@ function App() {
   const themes = [
     {
       name: 'Theme 1',
-      backgroundColor: 'conic-gradient(from -270deg at 75% 110%, fuchsia, floralwhite)',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, fuchsia, floralwhite)',
       textColor: '#FFC8FB',
-      squiggleColor: '#CFBFF7',
+      squiggleColor: '#B118C8',
       logoColors: {
-        fill: '#CFBFF7',
-        stroke: '#1D0134',
-        iconFill: '#1D0134',
-        iconStroke: '#CCCCCC'
+        fill: '#B118C8',
+        stroke: 'white',
+        iconFill: '#9A48D0',
+        iconStroke: '#9A48D0'
       }
     },
     {
       name: 'Theme 2',
-      backgroundColor: 'conic-gradient(from -270deg at 75% 110%, midnightblue,#94D1BE)',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, #1B1B1E, #A9BCD0)',
       textColor: '#3B413C',
       squiggleColor: '#BFF0D4',
       logoColors: {
@@ -43,14 +43,39 @@ function App() {
       name: 'Theme 3',
       backgroundColor: 'conic-gradient(from 90deg at bottom right, cyan, rebeccapurple)',
       textColor: '#F0EFF4E0DE',
+      squiggleColor: '#89DAFF',
       logoColors: {
-        fill: '#F0EFF4',
-        stroke: '#1D0134',
+        fill: '#324376',
+        stroke: '#1C6E8C',
         iconFill: '#1D0134',
         iconStroke: '#CCCCCC'
       }
     },
-  ];
+    {
+      name: 'Theme 4',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, #8B5FBF, #643A71)',
+      textColor: '#210124',
+      squiggleColor: '#D183C9',
+      logoColors: {
+        fill: '#D183C9',
+        stroke: '#F7F5FB',
+        iconFill: '#B0CA87',
+        iconStroke: '#B0CA87'
+      }
+    },
+    {
+      name: 'Theme 5',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, #A9FDAC, #F1FFE7)',
+      textColor: '#32A287',
+      squiggleColor: '#44CF6C',
+      logoColors: {
+        fill: '#32A287',
+        stroke: '#63E2C6',
+        iconFill: '#B0CA87',
+        iconStroke: '#B0CA87'
+      }
+    },
+  ]; 
 
   const [themeIndex, setThemeIndex] = useState(0);
   const theme = themes[themeIndex];
