@@ -14,5 +14,43 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* color: rgb(24, 5, 42); */
 }
+
+
+.h1 {
+  background-color: conic-gradient(from -90deg at 25% 115%, #ff0000, #ff0066, #ff00cc, #cc00ff, #6600ff, #0000ff, #0000ff, #0000ff, #0000ff);
+}
+/* 
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.content-container-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.content-container-body {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  animation: gradientColor 5s linear infinite;
+}
+
+@keyframes gradientColor {
+  0% {
+    background-color: #f0f0f0;
+  }
+  50% {
+    background-color: #c0c0c0;
+  }
+  100% {
+    background-color: #f0f0f0;
+  }
+} */

@@ -1,5 +1,4 @@
 .navbar {
-    /* background-color: #c285f5; */
     position: sticky;
     top: 0;
     display: flex;
@@ -23,9 +22,9 @@
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px; /* Adjust the width as needed */
-    height: 20px; /* Adjust the height as needed */
-    background-image: url(https://static.thenounproject.com/png/1670710-200.png); /* heart icons */
+    width: 20px;
+    height: 20px;
+    background-image: url(https://static.thenounproject.com/png/1670710-200.png);
     background-size: cover;
   }
   

@@ -17,7 +17,7 @@ function App() {
   const themes = [
     {
       name: 'Theme 1',
-      backgroundColor: '#c285f5',
+      backgroundColor: 'conic-gradient(from -270deg at 75% 110%, fuchsia, floralwhite)',
       textColor: '#FFC8FB',
       squiggleColor: '#CFBFF7',
       logoColors: {
@@ -29,23 +29,22 @@ function App() {
     },
     {
       name: 'Theme 2',
-      backgroundColor: '#1B512D',
-      textColor: '#B1CF5F',
+      backgroundColor: 'conic-gradient(from -270deg at 75% 110%, midnightblue,#94D1BE)',
+      textColor: '#3B413C',
       squiggleColor: '#BFF0D4',
       logoColors: {
         fill: '#B0CA87',
-        stroke: '#B0CA87',
+        stroke: '#DAF0EE',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
       }
     },
     {
       name: 'Theme 3',
-      backgroundColor: '#383B53',
-      textColor: '#D4D6B9',
-      squiggleColor: '#C0E0DE',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, cyan, rebeccapurple)',
+      textColor: '#F0EFF4E0DE',
       logoColors: {
-        fill: '#1D0134',
+        fill: '#F0EFF4',
         stroke: '#1D0134',
         iconFill: '#1D0134',
         iconStroke: '#CCCCCC'
@@ -62,7 +61,7 @@ function App() {
   };
 
   return (
-    <div style={{ backgroundColor: theme.backgroundColor, color: theme.textColor }}>
+    <div style={{ backgroundImage: theme.backgroundColor, color: theme.textColor }}>
     <Navbar squiggleColor={theme.squiggleColor} />
       <Routes>
         <Route path="/" element={<Home />}/>
