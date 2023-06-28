@@ -6,8 +6,6 @@ import CareerLore from './CareerLore';
 import './App.css';
 import './Navbar.css';
 
-
-// import logo from './logo.svg';
 import Home from './Home';
 import BottomBar from './BottomBar';
 import { Route, Routes } from 'react-router-dom';
