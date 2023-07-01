@@ -17,15 +17,15 @@
 }
 
 .home-container h1 {
-  font-family: 'Press Start 2P', cursive;
+  font-family: Quicksand;
   --bg-size: 400%;
-  --color-one: hsl(295, 100%, 83%);
-  --color-two: hsl(240, 97%, 70%);
-  --color-three: hsl(175, 100%, 66%);
-  --color-four: hsl(138, 100%, 62%);
-  --color-five: hsl(62, 93%, 57%);
-  --color-six: hsl(36, 94%, 67%);
-  --color-seven: hsl(299, 100%, 65%);
+  --color-one: hsl(220, 95%, 58%);
+  --color-two: hsl(211, 100%, 53%);
+  --color-three: hsl(198, 100%, 64%);
+  --color-four: hsl(152, 100%, 56%);
+  --color-five: hsl(129, 96%, 53%);
+  --color-six: hsl(86, 94%, 67%);
+  --color-seven: hsl(64, 100%, 59%);
   font-size: clamp(1rem, 8vmin, 3rem);
   background: linear-gradient(
     90deg,
@@ -44,8 +44,8 @@
     var(--color-one)
   ) 0 0 / var(--bg-size) 100%;
   color: transparent;
-  /* background-clip: text;
-  -webkit-background-clip: text; */
+  background-clip: text;
+  -webkit-background-clip: text;
   animation: move-bg 10s infinite linear;
 }
 
