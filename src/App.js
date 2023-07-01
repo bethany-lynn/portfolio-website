@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from './Navbar'; 
 import Projects from './Projects';
 import CareerLore from './CareerLore';
+import Resume from './Resume';
 
 import './App.css';
 import './Navbar.css';
@@ -90,6 +91,7 @@ function App() {
         <Route path="/" element={<Home />}/>
         <Route path="/projects" element={<Projects />} />
         <Route path="/career" element={<CareerLore />} />
+        <Route path="/resume" element={<Resume />} />
       </Routes>
     <div className="App">
       <header className="App-header">

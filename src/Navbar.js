@@ -22,6 +22,7 @@ function Navbar({ squiggleColor }) {
         <li><Link to="/">Home</Link></li>
         <li><Link to="/projects">Projects</Link></li>
         <li><Link to="/career">Career Lore</Link></li>
+        <li><Link to="/resume">Resume</Link></li>
       </ul>
     </nav>
   );
