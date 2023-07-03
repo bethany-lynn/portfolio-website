@@ -57,35 +57,3 @@
     background-position: 100% 0;
   }
 }
-
-/* 
-@keyframes gradientAnimation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-.home-container h1 {
-  text-rendering: auto;
-  background-image: conic-gradient(
-    from -90deg at 25% 115%,
-    #a5f675,
-    #60f799,
-    #00f0f4,
-    #d440b6,
-    #f29c72,
-    #e7ad6a
-  );
-  background-size: 8000% 8000%;
-  background-position: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradientAnimation 15s linear infinite;
-  font-family: Quicksand;
-} */

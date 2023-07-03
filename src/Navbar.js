@@ -1,8 +1,8 @@
 import React from 'react';
 import './Navbar.css'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-function Navbar({ squiggleColor }) {
+function Navbar({ squiggleColor, handleScrollToSection }) {
   return (
     <nav className="navbar">
       <div className="squiggle-shape">
@@ -19,10 +19,10 @@ function Navbar({ squiggleColor }) {
         </svg>
       </div>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/projects">Projects</Link></li>
-        <li><Link to="/career">Career Lore</Link></li>
-        <li><Link to="/resume">Resume</Link></li>
+        <li><button onClick={() => handleScrollToSection('section1')}>Home</button></li>
+        <li><button onClick={() => handleScrollToSection('section2')}>Projects</button></li>
+        <li><button onClick={() => handleScrollToSection('section3')}>Career Lore</button></li>
+        <li><button onClick={() => handleScrollToSection('section4')}>Resume</button></li>
       </ul>
     </nav>
   );
