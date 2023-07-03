@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from './Navbar'; 
+import Home from './Home';
 import Projects from './Projects';
 import CareerLore from './CareerLore';
 import Resume from './Resume';
-
-import './App.css';
-import './Navbar.css';
-
-import Home from './Home';
 import BottomBar from './BottomBar';
+import './App.css';
 // import { Route, Routes } from 'react-router-dom';
 
 
@@ -126,9 +123,6 @@ function App() {
         </g>
         </svg>
       </button>
-      
-
-
       </header>
 
       <div id="section1">

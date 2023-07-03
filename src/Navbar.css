@@ -12,8 +12,10 @@
   }
   
   .navbar ul li {
+    display: inline-block;
     position: relative;
     padding-left: 25px;
+    margin-right: 70px;
   }
   
   .navbar ul li::before {
@@ -37,6 +39,13 @@
     color: white;
   }
 
+.navbar button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  /* color: aliceblue; */
+}
+
   .squiggle-shape {
     position: absolute;
     top: 0;
@@ -44,5 +53,5 @@
     overflow: hidden;
     line-height: 0;
     fill: rgba(255, 47, 29, 0.582);
-    min-width: 100vw;
+    min-width: 165vw;
   }
