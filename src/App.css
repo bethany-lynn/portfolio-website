@@ -6,11 +6,11 @@
   align-items: center;
   min-height: 100vh;
 } */
+
 .App-logo {
   height: 20vmin;
   pointer-events: none;
   display: flex;
-  z-index: 3;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -47,9 +47,14 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  z-index: 3;
 }
 
 .svg-button:hover svg {
   fill: #272727;
   stroke: #000000;
+}
+
+.svg-button:focus {
+  outline: none;
 }
