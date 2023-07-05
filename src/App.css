@@ -1,14 +1,5 @@
-/* .App {
-  text-align: center;
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-} */
-
 .App-logo {
-  height: 20vmin;
+  height: 7vmin;
   pointer-events: none;
   display: flex;
 }
@@ -33,13 +24,9 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 15px;
   font-size: calc(5px + 2vmin);
-  width: 100%;
-}
-
-.svg-container {
-  margin-right: 10px;
+  width: 50%;
 }
 
 .svg-button {
@@ -47,14 +34,14 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  z-index: 3;
-}
-
-.svg-button:hover svg {
-  fill: #272727;
-  stroke: #000000;
+  position: relative;
 }
 
 .svg-button:focus {
   outline: none;
+}
+
+.section {
+  margin-bottom: 200px;
+  padding-bottom: 200px;
 }

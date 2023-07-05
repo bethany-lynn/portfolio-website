@@ -3,7 +3,7 @@
     top: 0;
     display: flex;
     justify-content: center;
-    z-index: 2;
+    z-index: 1;
   }
   
   .navbar ul {
@@ -43,7 +43,6 @@
   background: transparent;
   border: none;
   padding: 0;
-  /* color: aliceblue; */
 }
 
   .squiggle-shape {
@@ -52,6 +51,7 @@
     left: 0;
     overflow: hidden;
     line-height: 0;
-    fill: rgba(255, 47, 29, 0.582);
+    fill: rgba(255, 48, 29, 0.088);
     min-width: 165vw;
+    margin-bottom: 50px;
   }
