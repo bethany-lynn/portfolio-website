@@ -28,7 +28,7 @@ function Carousel() {
     <section className="project-carousel">
       <div className="carousel-container">
         <div className="row">
-          <div className="col-lg-6 d-none d-lg-block">
+          <div className="col-lg-6 col-12 d-lg-block">
             <ol className="carousel-indicators tabs">
               <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active">
                 <figure>
@@ -47,7 +47,7 @@ function Carousel() {
               </li>
             </ol>
           </div>
-          <div className="col-lg-6 d-flex justify-content-center align-items-center">
+          <div className="col-lg-6 col-12 d-flex justify-content-center align-items-center">
             <div id="carouselExampleIndicators" data-interval="false" className="carousel slide" data-ride="carousel">
               <h3>MY PROJECTS</h3>
               <div className="carousel-inner">

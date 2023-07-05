@@ -6,7 +6,7 @@ import CareerLore from './CareerLore';
 import Resume from './Resume';
 import BottomBar from './BottomBar';
 import './App.css';
-// import { Route, Routes } from 'react-router-dom';
+
 
 
 function App() {
@@ -128,22 +128,40 @@ function App() {
       <div id="section1">
         <Home />
       </div>
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div id="section2">
         <Projects />
       </div>
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div id="section3">
         <CareerLore />
       </div>
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div id="section4">
         <Resume />
       </div>
-
-
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <BottomBar />
-      {/* <button onClick={changeTheme}>im bored</button> */}
       <br />
       <br />
       <br />

@@ -55,7 +55,7 @@ a:hover {
     content: "";
     width: 30px;
     height: 30px;
-    background-color: #a3f9e2;
+    background-color: #009970;
     border-radius: 50%;
 }
 
@@ -154,12 +154,14 @@ a:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    z-index: 2;
 }
 
 .project-carousel .row .tabs.carousel-indicators li.active figure::after {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    z-index: 2;
 }
 
 .project-carousel .row .carousel>h3 {
@@ -186,7 +188,7 @@ a:hover {
 }
 
 .project-carousel .row .carousel .carousel-indicators li {
-    background: #11ffdf;
+    background: #000000;
     background-clip: padding-box;
     height: 2px;
 }
