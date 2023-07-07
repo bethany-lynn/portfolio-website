@@ -1,209 +1,147 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700");
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.project-carousel .row {
-    flex-wrap: wrap;
-}
-
-ul {
-    list-style-type: none;
-}
-
 .carousel-container {
-    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.col-md-4 {
+    padding-bottom: 20px;
 }
 
-a,
-a:hover {
+.white {
+    color: #fff !important;
+}
+
+.mt {
+    float: left;
+    margin-top: -20px;
+    padding-top: 20px;
+}
+
+.bg-blue-ui {
+    background-color: #000000 !important;
+}
+
+figure img {
+    width: 300px;
+}
+
+#blogCarousel {
+    padding-bottom: 100px;
+}
+
+.blog .carousel-indicators {
+    left: 0;
+    top: -50px;
+    height: 50%;
+}
+
+.blog .carousel-indicators li {
+    background: #006aff;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+
+.blog .carousel-indicators .active {
+    background: #0fc9af;
+}
+
+.item-carousel-blog-block {
+    outline: medium none;
+    padding: 15px;
+}
+
+.item-box-blog {
+    border: 1px solid #dadada;
+    text-align: center;
+    z-index: 4;
+    padding: 20px;
+}
+
+.item-box-blog-image {
+    position: relative;
+}
+
+.item-box-blog-image figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.item-box-blog:hover {
+    border-width: 4px;
+    border-color: #fd65f8;
+  }  
+
+.item-box-blog-date {
+    position: absolute;
+    z-index: 5;
+    padding: 4px 20px;
+    top: -20px;
+    right: 8px;
+    background-color: #41cb52;
+}
+
+.item-box-blog-date span {
+    color: #fff;
+    display: block;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.item-box-blog-date span.mon {
+    font-size: 18px;
+}
+
+.item-box-blog-date span.day {
+    font-size: 16px;
+}
+
+.item-box-blog-body {
+    padding: 10px;
+}
+
+.item-heading-blog a h5 {
+    margin: 0;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.item-box-blog-heading a {
     text-decoration: none;
 }
 
-.project-carousel {
-    padding: 50px 0;
-    /* display: flex; */
-    justify-content: center;
-    /* align-items: center; */
+.item-box-blog-data p {
+    font-size: 13px;
 }
 
-.project-carousel img {
-    border-radius: 50%;
+.item-box-blog-data p i {
+    font-size: 12px;
 }
 
-.project-carousel .row .tabs {
-    all: unset;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
+.item-box-blog-text {
+    max-height: 200px;
+    overflow: hidden;
 }
 
-.project-carousel .row .tabs li {
-    all: unset;
-    display: block;
-    position: relative;
-    margin: 30px;
+.mt-10 {
+    float: left;
+    margin-top: -10px;
+    padding-top: 10px;
 }
 
-.project-carousel .row .tabs li:nth-child(1) {
-    align-self: flex-end;
+.btn.bg-blue-ui.white.read {
+    cursor: pointer;
+    padding: 4px 20px;
+    float: left;
+    margin-top: 10px;
 }
 
-.project-carousel .row .tabs li:nth-child(1)::before {
-    left: 64%;
-    bottom: -50px;
-}
-
-.project-carousel .row .tabs li:nth-child(1)::after {
-    left: 97%;
-    bottom: -81px;
-}
-
-.project-carousel .row .tabs li:nth-child(1) figure img {
-    margin-left: auto;
-}
-
-.project-carousel .row .tabs li:nth-child(2) {
-    align-self: center;
-}
-
-.project-carousel .row .tabs li:nth-child(2)::before {
-    right: -65px;
-    top: 50%;
-}
-
-.project-carousel .row .tabs li:nth-child(2)::after {
-    bottom: 101px;
-    border-radius: 50%;
-    right: -120px;
-}
-
-.project-carousel .row .tabs li:nth-child(2) figure img {
-    margin-right: auto;
-    max-width: 400px;
-    width: 100%;
-    margin-top: -50px;
-}
-
-.project-carousel .row .tabs li:nth-child(3) {
-    align-self: flex-end;
-}
-
-.project-carousel .row .tabs li:nth-child(3)::before {
-    right: -10px;
-    top: -66%;
-}
-
-.project-carousel .row .tabs li:nth-child(3)::after {
-    top: -130px;
-    border-radius: 50%;
-    right: -46px;
-}
-
-.project-carousel .row .tabs li:nth-child(3) figure img {
-    margin-left: auto;
-    margin-top: -50px;
-}
-
-.project-carousel .row .tabs li:nth-child(3):focus {
-    border: 10px solid red;
-}
-
-.project-carousel .row .tabs li figure {
-    position: relative;
-}
-
-.project-carousel .row .tabs li figure img {
-    display: block;
-    max-width: 100px;
-    max-height: 100px;
-}
-
-.project-carousel .row .tabs li figure::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    border: 4px solid #000000;
-    border-radius: 50%;
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.project-carousel .row .tabs li figure:hover::after {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    z-index: 0;
-}
-
-.project-carousel .row .tabs.carousel-indicators li.active figure::after {
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-    z-index: 0;
-}
-
-.project-carousel .row .carousel>h3 {
-    font-size: 30px;
-    line-height: 1.45;
-    color: rgba(0, 0, 0, 0.836);
-    font-weight: 600;
-    margin-bottom: 100;
-}
-
-.project-carousel .row .carousel h1 {
-    font-size: 100px;
-    line-height: 1.225;
-    margin-top: 23px;
-    font-weight: 500;
-    margin-bottom: 0;
-}
-
-.project-carousel .row .carousel .carousel-indicators {
-    all: unset;
-    padding-top: 43px;
-    display: flex;
-    list-style: none;
-}
-
-.project-carousel .row .carousel .carousel-indicators li {
-    background: #000000;
-    background-clip: padding-box;
-    height: 2px;
-}
-
-.project-carousel .row .carousel .carousel-inner .carousel-item .quote-wrapper {
-    margin-top: 2px;
-}
-
-.project-carousel .row .carousel .carousel-inner .carousel-item .quote-wrapper p {
-    font-size: 35px;
-    line-height: 1.72222;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.7);
-}
-
-.project-carousel .row .carousel .carousel-inner .carousel-item .quote-wrapper h3 {
-    color: #000;
-    font-weight: 700;
-    margin-top: 37px;
-    font-size: 20px;
-    line-height: 1.45;
-    /* text-transform: uppercase; */
-}
-
-@media only screen and (max-width: 100px) {
-    .project-carousel .row .tabs {
-        margin-right: 25px;
-    }
+.btn.bg-blue-ui.white.read:hover {
+    box-shadow: 0px 5px 15px inset #f2b0ff;
 }

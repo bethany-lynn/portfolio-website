@@ -1,85 +1,110 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './Carousel.css';
-import $ from 'jquery';
 
 function Carousel() {
-    useEffect(() => {
-        $(".project-carousel .indicators li").click(function(e) {
-            e.preventDefault();
-          let i = $(this).index();
-          let targetElement = $(".project-carousel .tabs li");
-          targetElement.eq(i).addClass('active');
-          targetElement.not(targetElement[i]).removeClass('active');
-        });
-    
-        $(".project-carousel .tabs li").click(function() {
-          let targetElement = $(".project-carousel .tabs li");
-          targetElement.addClass('active');
-          targetElement.not($(this)).removeClass('active');
-        });
-    
-        $(".slider .swiper-pagination span").each(function(i) {
-          $(this).text(i + 1).prepend("0");
-        });
-      }, []);
-
-
   return (
-    <section className="project-carousel">
-      <div className="carousel-container">
-        <div className="row">
-          <div className="col-lg-6 d-none d-lg-block">
-            <ol className="carousel-indicators tabs">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active">
-                <figure>
-                  <img src="https://i.pinimg.com/736x/1b/f9/db/1bf9db61b32ceff79539bae2e2c1b98d.jpg" className="img-fluid" alt="" />
-                </figure>
-              </li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1">
-                <figure>
-                  <img src="https://i.pinimg.com/736x/1b/f9/db/1bf9db61b32ceff79539bae2e2c1b98d.jpg" className="img-fluid" alt="" />
-                </figure>
-              </li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2">
-                <figure>
-                  <img src="https://i.pinimg.com/736x/1b/f9/db/1bf9db61b32ceff79539bae2e2c1b98d.jpg" className="img-fluid" alt="" />
-                </figure>
-              </li>
-            </ol>
-          </div>
-          <div className="col-lg-6 d-flex justify-content-center align-items-center">
-            <div id="carouselExampleIndicators" data-interval="false" className="carousel slide" data-ride="carousel">
-              <h3>MY PROJECTS</h3>
+    <div className="carousel-container">
+      <div className="container">
+        <div className="row blog">
+          <div className="col-md-12">
+            <div id="blogCarousel" className="carousel slide container-blog">
               <div className="carousel-inner">
                 <div className="carousel-item active">
-                  <div className="quote-wrapper">
-                    <p>BIRD-DEX</p>
-                    <h3>bird information</h3>
+                  <div className="row">
+                    <div className="col-md-4">
+                      <div className="item-box-blog">
+                        <div className="item-box-blog-image">
+                          <div className="item-box-blog-date bg-blue-ui white">
+                            <span className="mon">Fantasy Dungeon</span>
+                          </div>
+                          <figure>
+                            <img alt="" src="https://i.pinimg.com/originals/2b/e1/7b/2be17bdcd142435f192c159c4c49a698.jpg" />
+                          </figure>
+                        </div>
+                        <div className="item-box-blog-body">
+                          <div className="item-box-blog-heading">
+                            <h5>Character Customization - D&D</h5>
+                          </div>
+                          <div className="item-box-blog-data">
+                          </div>
+                          <div className="item-box-blog-text">
+                            <p>Built using Python, a PostgresSQL database, Flask, and more, with the D&D5E API.</p>
+                            DEMOVIDEOLINK
+                          </div>
+                          <div className="mt">
+                            <a href="https://github.com/bethany-lynn/dnd-character-creation" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
+                              GH Link
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="item-box-blog">
+                        <div className="item-box-blog-image">
+                          <div className="item-box-blog-date bg-blue-ui white">
+                            <span className="mon">Bird-Dex</span>
+                          </div>
+                          <figure>
+                            <img alt="" src="https://cdn.donmai.us/sample/02/90/__hatsune_miku_and_sakura_miku_vocaloid_drawn_by_kenouo__sample-02905dc2a2672ddb5916ccd9436dfc68.jpg" />
+                          </figure>
+                        </div>
+                        <div className="item-box-blog-body">
+                          <div className="item-box-blog-heading">
+                            <h5>8-bit Style Bird Appreciation App</h5>
+                          </div>
+                          <div className="item-box-blog-data">
+                          </div>
+                          <div className="item-box-blog-text">
+                            <p>Built alongside June Adams with React, Node, and more! Dynamically displayed using re-usable components.</p>
+                          </div>
+                          <div className="mt">
+                            <a href="https://github.com/juneadam/bird-app" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
+                              GH Link
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="item-box-blog">
+                        <div className="item-box-blog-image">
+                          <div className="item-box-blog-date bg-blue-ui white">
+                            <span className="mon">React Jam</span>
+                          </div>
+                          <figure>
+                            <img alt="" src="https://s1.zerochan.net/Hatsune.Miku.600.1758915.jpg" />
+                          </figure>
+                        </div>
+                        <div className="item-box-blog-body">
+                          <div className="item-box-blog-heading">
+                            <h5>10-day React game-making challenge!</h5>
+                          </div>
+                          <div className="item-box-blog-data">
+                          </div>
+                          <div className="item-box-blog-text">
+                            <p>Currently preparing for the annual React Jam to make an small game in 10 days! Possible screen-scoller, point collector!</p>
+                          </div>
+                          <div className="mt">
+                            <a href="https://github.com/juneadam/css-sandbox-react" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
+                              GH Link
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="carousel-item">
-                  <div className="quote-wrapper">
-                    <p>FANTASY DUNGEON</p>
-                    <h3>dungeon information</h3>
-                  </div>
-                </div>
-                <div className="carousel-item">
-                  <div className="quote-wrapper">
-                    <p>PORTFOLIO?</p>
-                    <h3>link to resume?</h3>
+                  <div className="row">
                   </div>
                 </div>
               </div>
-              <ol className="carousel-indicators indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              </ol>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
