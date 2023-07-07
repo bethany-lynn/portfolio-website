@@ -1,7 +1,5 @@
 import React from 'react';
 import './CareerLore.css'
-// import { Document, Page } from 'react-pdf';
-// import ResumePDF from '../public/resume.pdf'
 
 function CareerLore() {
     return (

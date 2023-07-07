@@ -10,7 +10,7 @@
 
 .app-wrapper {
   margin-top: 145px;
-  overflow-y: scroll;
+  overflow-x: hidden;
   height: 90vh;
 }
 

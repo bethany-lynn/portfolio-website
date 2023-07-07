@@ -9,7 +9,7 @@ function Resume() {
           <h1>Resume</h1>
             <iframe src="https://drive.google.com/file/d/1jyAruxzs4i4Q3RpT3L-rRXDFToODz7wH/preview" 
             title="Embedded PDF" 
-            width="540" height="750" allow="autoplay">
+            width="740" height="950" allow="autoplay">
             </iframe>
         </div>
     );
