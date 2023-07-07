@@ -10,7 +10,8 @@
   
   .navbar ul {
     list-style: none;
-    padding: 0;
+    padding: 20;
+    font-size: 2rem;
   }
   
   .navbar ul li {
@@ -23,11 +24,11 @@
   .navbar ul li::before {
     content: "";
     position: absolute;
-    left: 0;
+    left: -15px;
     top: 50%;
     transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background-image: url(https://static.thenounproject.com/png/1670710-200.png);
     background-size: cover;
   }
@@ -47,7 +48,7 @@
   padding: 0;
 }
 
-.squiggle-shape {
+/* .squiggle-shape {
     position: absolute;
     top: 0;
     left: 0;
@@ -55,7 +56,7 @@
     line-height: 10;
     fill: rgba(0, 0, 0, 0.088);
     min-width: 4096px;
-    /* margin-bottom: 50px; */
-}
+} */
 
 /* set break points for mobile view */
+
