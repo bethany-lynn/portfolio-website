@@ -7,9 +7,6 @@ import Resume from './Resume';
 import BottomBar from './BottomBar';
 import './App.css';
 
-
-
-
 function App() {
   const themes = [
     {
@@ -100,12 +97,12 @@ function App() {
   return (
     <div style={{ backgroundImage: theme.backgroundColor, color: theme.textColor }}>
     <Navbar squiggleColor={theme.squiggleColor} handleScrollToSection={handleScrollToSection} />
+    <div className="app-wrapper">
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
 
-      </header>
-
-      <div id="section1">
+      </header> */}
+      <div className="pages" id="section1">
         <Home appLogo={(
           <button className="svg-button" onClick={handleBoredClick}>
           <svg
@@ -131,23 +128,20 @@ function App() {
           </button>
           )} />
       </div>
-
-      <div id="section2">
+      <div className="pages" id="section2">
         <Projects />
       </div>
-
-      <div id="section3">
+      <div className="pages" id="section3">
         <CareerLore />
       </div>
-
-      <div id="section4">
+      <div className="pages" id="section4">
         <Resume />
       </div>
-
       <BottomBar />
       <br />
       <br />
       <br />
+    </div>
     </div>
     </div>
   );

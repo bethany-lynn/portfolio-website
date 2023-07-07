@@ -4,6 +4,16 @@
   display: flex;
 }
 
+.pages {
+  margin-bottom: 150px;
+}
+
+.app-wrapper {
+  margin-top: 145px;
+  overflow-y: scroll;
+  height: 90vh;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 10s linear;

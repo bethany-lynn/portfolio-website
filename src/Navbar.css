@@ -3,7 +3,9 @@
     top: 0;
     display: flex;
     justify-content: center;
-    z-index: 1;
+    z-index: 0;
+    margin-bottom: 100px;
+    background-color: transparent;
   }
   
   .navbar ul {
@@ -45,13 +47,15 @@
   padding: 0;
 }
 
-  .squiggle-shape {
+.squiggle-shape {
     position: absolute;
     top: 0;
     left: 0;
     overflow: hidden;
-    line-height: 0;
-    fill: rgba(255, 48, 29, 0.088);
-    min-width: 165vw;
-    margin-bottom: 50px;
-  }
+    line-height: 10;
+    fill: rgba(0, 0, 0, 0.088);
+    min-width: 4096px;
+    /* margin-bottom: 50px; */
+}
+
+/* set break points for mobile view */

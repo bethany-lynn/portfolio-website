@@ -5,7 +5,7 @@ import './Projects.css'
 function Projects() {
   return (
     <div className='projects-body'>
-      <h1>Projects to display</h1>
+      {/* <h1>My Projects</h1> */}
       <Carousel />
     </div>
   );
