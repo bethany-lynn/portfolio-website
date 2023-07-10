@@ -14,14 +14,14 @@ function App() {
     {
       name: 'Theme 1',
       backgroundColor: 'conic-gradient(from 90deg at bottom right, fuchsia, floralwhite)',
-      textColor: '#AD009C',
+      textColor: '#f1c0e8',
       itemBoxBlogHover: {
         borderWidth: '4px',
         borderColor: '#fd65f8'
       },
       logoColors: {
-        fill: '#B118C8',
-        stroke: 'white',
+        fill: '#f7cad0',
+        stroke: '#ffd6ff',
         iconFill: '#9A48D0',
         iconStroke: '#9A48D0'
       }
@@ -35,7 +35,7 @@ function App() {
         borderColor: ' #41cb52'
       },
       logoColors: {
-        fill: '#B0CA87',
+        fill: '#dad7cd',
         stroke: '#DAF0EE',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
@@ -50,22 +50,22 @@ function App() {
         borderColor: '#fd65f8'
       },
       logoColors: {
-        fill: '#324376',
-        stroke: '#1C6E8C',
+        fill: '#bde0fe',
+        stroke: '#003049',
         iconFill: '#1D0134',
         iconStroke: '#CCCCCC'
       }
     },
     {
       name: 'Theme 4',
-      backgroundColor: 'conic-gradient(from 90deg at bottom right, #6200B3, #8B1FA1)',
-      textColor: '#290628',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, #e7c6ff, #c8b6ff)',
+      textColor: '#c8b6ff',
       itemBoxBlogHover: {
         borderWidth: '4px',
         borderColor: '#fd65f8'
       },
       logoColors: {
-        fill: '#D183C9',
+        fill: '#c8b6ff',
         stroke: '#F7F5FB',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
@@ -73,15 +73,15 @@ function App() {
     },
     {
       name: 'Theme 5',
-      backgroundColor: 'conic-gradient(from 90deg at bottom right, #0A210F, #124B1A)',
-      textColor: '#CFD475',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, #f4eea9, #f4f482)',
+      textColor: '#a47e1b',
       itemBoxBlogHover: {
         borderWidth: '4px',
         borderColor: '#fd65f8'
       },
       logoColors: {
-        fill: '#32A287',
-        stroke: '#CFD475',
+        fill: '#fffcf2',
+        stroke: '#76520e',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
       }
