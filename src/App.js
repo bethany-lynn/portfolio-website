@@ -15,7 +15,10 @@ function App() {
       name: 'Theme 1',
       backgroundColor: 'conic-gradient(from 90deg at bottom right, fuchsia, floralwhite)',
       textColor: '#AD009C',
-      // squiggleColor: '#B118C8',
+      itemBoxBlogHover: {
+        borderWidth: '4px',
+        borderColor: '#fd65f8'
+      },
       logoColors: {
         fill: '#B118C8',
         stroke: 'white',
@@ -27,7 +30,10 @@ function App() {
       name: 'Theme 2',
       backgroundColor: 'conic-gradient(from 90deg at bottom right, #CAFFD0, #C9FFE9)',
       textColor: '#2D3319',
-      // squiggleColor: '#BFF0D4',
+      itemBoxBlogHover: {
+        borderWidth: '4px',
+        borderColor: ' #41cb52'
+      },
       logoColors: {
         fill: '#B0CA87',
         stroke: '#DAF0EE',
@@ -39,7 +45,10 @@ function App() {
       name: 'Theme 3',
       backgroundColor: 'conic-gradient(from 90deg at bottom right, cyan, rebeccapurple)',
       textColor: '#F0EFF4E0DE',
-      // squiggleColor: '#89DAFF',
+      itemBoxBlogHover: {
+        borderWidth: '4px',
+        borderColor: '#fd65f8'
+      },
       logoColors: {
         fill: '#324376',
         stroke: '#1C6E8C',
@@ -51,7 +60,10 @@ function App() {
       name: 'Theme 4',
       backgroundColor: 'conic-gradient(from 90deg at bottom right, #6200B3, #8B1FA1)',
       textColor: '#290628',
-      // squiggleColor: '#D183C9',
+      itemBoxBlogHover: {
+        borderWidth: '4px',
+        borderColor: '#fd65f8'
+      },
       logoColors: {
         fill: '#D183C9',
         stroke: '#F7F5FB',
@@ -61,12 +73,15 @@ function App() {
     },
     {
       name: 'Theme 5',
-      backgroundColor: 'conic-gradient(from 90deg at bottom right, #A9FDAC, #A2CDD2)',
-      textColor: '#043E57',
-      // squiggleColor: '#44CF6C',
+      backgroundColor: 'conic-gradient(from 90deg at bottom right, #0A210F, #124B1A)',
+      textColor: '#CFD475',
+      itemBoxBlogHover: {
+        borderWidth: '4px',
+        borderColor: '#fd65f8'
+      },
       logoColors: {
         fill: '#32A287',
-        stroke: '#63E2C6',
+        stroke: '#CFD475',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
       }
@@ -92,6 +107,20 @@ function App() {
     }
   };
 
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      console.log(entry)
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      } else {
+        entry.target.classList.remove('show');
+      }
+    });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+
   const handleBoredClick = () => {
     changeTheme();
   };
@@ -102,7 +131,7 @@ function App() {
       <div className="app-wrapper">
         <div className="App">
           <div className="pages" id="section1">
-            <Home appLogo={(
+            <Home class="hidden" appLogo={(
               <button className="svg-button" onClick={handleBoredClick}>
                 <svg
                   className={`App-logo ${theme.logoClassName}`}
@@ -137,13 +166,13 @@ function App() {
             )} />
           </div>
           <div className="pages" id="section2">
-            <Projects />
+            <Projects class="hidden" theme={theme} />
           </div>
           <div className="pages" id="section3">
-            <CareerLore />
+            <CareerLore class="hidden" />
           </div>
           <div className="pages" id="section4">
-            <Resume />
+            <Resume class="hidden" />
           </div>
           <BottomBar />
           <br />

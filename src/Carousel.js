@@ -1,7 +1,24 @@
 import React from 'react';
 import './Carousel.css';
 
-function Carousel() {
+function Carousel( {theme} ) {
+
+  const getItemBoxBlogClassName = () => {
+    if (theme.name === 'Theme 1') {
+      return 'item-box-blog item-box-blog-hover-theme1';
+    } else if (theme.name === 'Theme 2') {
+      return 'item-box-blog item-box-blog-hover-theme2';
+    } else if (theme.name === 'Theme 3') {
+      return 'item-box-blog item-box-blog-hover-theme3';
+    } else if (theme.name === 'Theme 4') {
+      return 'item-box-blog item-box-blog-hover-theme4';
+    } else if (theme.name === 'Theme 5') {
+      return 'item-box-blog item-box-blog-hover-theme5';
+    } else {
+      return 'item-box-blog';
+    }
+  };
+  
   return (
     <div className="carousel-container">
       <div className="container">
@@ -12,7 +29,7 @@ function Carousel() {
                 <div className="carousel-item active">
                   <div className="row">
                     <div className="col-md-4">
-                      <div className="item-box-blog">
+                      <div className={getItemBoxBlogClassName()}>
                         <div className="item-box-blog-image">
                           <div className="item-box-blog-date bg-blue-ui white">
                             <span className="mon">Fantasy Dungeon</span>
@@ -40,7 +57,7 @@ function Carousel() {
                       </div>
                     </div>
                     <div className="col-md-4">
-                      <div className="item-box-blog">
+                      <div className={getItemBoxBlogClassName()}>
                         <div className="item-box-blog-image">
                           <div className="item-box-blog-date bg-blue-ui white">
                             <span className="mon">Bird-Dex</span>
@@ -67,7 +84,7 @@ function Carousel() {
                       </div>
                     </div>
                     <div className="col-md-4">
-                      <div className="item-box-blog">
+                      <div className={getItemBoxBlogClassName()}>
                         <div className="item-box-blog-image">
                           <div className="item-box-blog-date bg-blue-ui white">
                             <span className="mon">React Jam</span>

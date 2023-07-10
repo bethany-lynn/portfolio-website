@@ -1,11 +1,11 @@
 import React from 'react';
 import Carousel from './Carousel';
-import './Projects.css'
+import './Projects.css';
 
-function Projects() {
+function Projects({ theme }) {
   return (
     <div className='projects-body'>
-      <Carousel />
+      <Carousel theme={theme} />
     </div>
   );
 }

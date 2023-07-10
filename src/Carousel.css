@@ -1,3 +1,45 @@
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all ls;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.row {
+    display: flex;
+}
+
+.col-md-4:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.col-md-4:nth-child(3){
+    transition-delay: 400ms;
+}
+
+.col-md-4:nth-child(4){
+    transition-delay: 600ms;
+}
+
+
+
+
+
+
+
+
 .carousel-container {
     display: flex;
     justify-content: center;
@@ -74,9 +116,34 @@ figure img {
 
 .item-box-blog:hover {
     border-width: 4px;
-    border-color: #fd65f8;
-  }  
+    border-color: #000000;
+}
 
+.item-box-blog-hover-theme1:hover {
+    border-width: 4px;
+    border-color: #fd65f8;
+}
+
+.item-box-blog-hover-theme2:hover {
+    border-width: 4px;
+    border-color: #41cb52;
+}
+
+.item-box-blog-hover-theme3:hover {
+    border-width: 4px;
+    border-color: #4de7ff;
+}
+
+.item-box-blog-hover-theme4:hover {
+    border-width: 4px;
+    border-color: #dd81ff;
+}
+
+.item-box-blog-hover-theme5:hover {
+    border-width: 4px;
+    border-color: #002e02;
+}
+ 
 .item-box-blog-date {
     position: absolute;
     z-index: 5;
@@ -103,6 +170,8 @@ figure img {
 
 .item-box-blog-body {
     padding: 10px;
+    color: black;
+    font-weight: 550;
 }
 
 .item-heading-blog a h5 {
