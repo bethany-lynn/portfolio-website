@@ -2,7 +2,7 @@
   display: grid;
   place-items: center;
   align-content: center;
-  min-height: 100vh;
+  min-height: 150vh;
 }
 
 .App-logo {
@@ -12,11 +12,11 @@
 }
 
 .pages {
-  margin-bottom: 150px;
+  margin-bottom: 450px;
 }
 
 .app-wrapper {
-  margin-top: 145px;
+  margin-top: 155px;
   overflow-x: hidden;
   height: 90vh;
 }

@@ -32,7 +32,7 @@
   --color-five: hsl(129, 96%, 53%);
   --color-six: hsl(86, 94%, 67%);
   --color-seven: hsl(64, 100%, 59%);
-  font-size: clamp(3rem, 25vmin, 8rem);
+  font-size: clamp(4rem, 50vmin, 12rem);
   background: linear-gradient(
     90deg,
     var(--color-one),
