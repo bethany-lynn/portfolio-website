@@ -21,7 +21,7 @@ function Carousel( {theme} ) {
   
   return (
     <div className="carousel-container">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row blog">
           <div className="col-md-12">
             <div id="blogCarousel" className="carousel slide container-blog">
