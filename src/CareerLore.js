@@ -3,9 +3,9 @@ import './CareerLore.css'
 
 function CareerLore() {
   return (
-    <div className='career-lore-body'>
-      <h1>How I Got Here</h1>
-      <div className="career-information">
+    <div className='card'>
+      <h1 className='card-title' >How I Got Here</h1>
+      <div className="card-content">
         At the age of 17, I went to beauty school, and immediately knew I wanted
         to work for myself, or away from the grind-culture of the beauty industry.
         <br />
@@ -33,8 +33,8 @@ function CareerLore() {
         life: relaxing with my dog and visiting friends and family across the county.
         <br />
       </div>
-      <div className="career-goals">
-        <h1>My Aspirations and Values</h1>
+      <div className="card-content">
+        <h1 className='card-title'>My Aspirations and Values</h1>
         I want to work for a company that sees technology as a tool to improve daily life. That can look 
         like a lot of different things, but progress should exist
         <br />
@@ -50,8 +50,8 @@ function CareerLore() {
         Community, inclusivity, kindness, and the earth are my biggest passions, and I'd love to work
         with people who felt similarly. 
       </div>
-      <div className="fun-info">
-        <h1>Free Time</h1>
+      <div className="card-content">
+        <h1 className='card-title'>Free Time</h1>
         In my free time, I do drink a hefty amount of tea, and I'm usually drinking it while playing a video game,
         doing a puzzle,
         <br />

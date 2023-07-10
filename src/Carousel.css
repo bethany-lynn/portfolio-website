@@ -1,4 +1,4 @@
-@media(prefers-reduced-motion) {
+/* @media(prefers-reduced-motion) {
     .hidden {
         transition: none;
     }
@@ -21,24 +21,20 @@
     display: flex;
 }
 
-.col-md-4:nth-child(2){
+.col-md-4:nth-child(2) {
     transition-delay: 200ms;
 }
 
-.col-md-4:nth-child(3){
+.col-md-4:nth-child(3) {
     transition-delay: 400ms;
 }
 
-.col-md-4:nth-child(4){
+.col-md-4:nth-child(4) {
     transition-delay: 600ms;
 }
 
 
-
-
-
-
-
+ */
 
 .carousel-container {
     display: flex;
@@ -47,8 +43,8 @@
     margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
-  }
-  
+}
+
 .col-md-4 {
     padding-bottom: 20px;
 }
@@ -84,8 +80,8 @@ figure img {
 .blog .carousel-indicators li {
     background: #006aff;
     border-radius: 50%;
-    width: 8px;
-    height: 8px;
+    width: 12px;
+    height: 12px;
 }
 
 .blog .carousel-indicators .active {
@@ -143,7 +139,7 @@ figure img {
     border-width: 4px;
     border-color: #a47e1b;
 }
- 
+
 .item-box-blog-date {
     position: absolute;
     z-index: 5;
@@ -172,6 +168,7 @@ figure img {
     padding: 10px;
     color: black;
     font-weight: 550;
+    font-size: 18px;
 }
 
 .item-heading-blog a h5 {
