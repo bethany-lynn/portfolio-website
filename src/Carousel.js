@@ -39,14 +39,13 @@ function Carousel( {theme} ) {
                           </figure>
                         </div>
                         <div className="item-box-blog-body">
-                          <div className="item-box-blog-heading">
-                            <h5>Character Customization - D&D</h5>
-                          </div>
+                          {/* <div className="item-box-blog-heading">
+                            Character Customization - D&D
+                          </div> */}
                           <div className="item-box-blog-data">
                           </div>
                           <div className="item-box-blog-text">
-                            <p>Built using Python, a PostgresSQL database, Flask, and more, with the D&D5E API.</p>
-                            DEMOVIDEOLINK
+                            <p>A D&D Character Customization App. Built using Python, a PostgresSQL database, Flask, and more, with the D&D5E API.</p>
                           </div>
                           <div className="mt">
                             <a href="https://github.com/bethany-lynn/dnd-character-creation" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
@@ -67,13 +66,13 @@ function Carousel( {theme} ) {
                           </figure>
                         </div>
                         <div className="item-box-blog-body">
-                          <div className="item-box-blog-heading">
-                            <h5>8-bit Style Bird Appreciation App</h5>
-                          </div>
+                          {/* <div className="item-box-blog-heading">
+                            8-bit Style Bird Appreciation App
+                          </div> */}
                           <div className="item-box-blog-data">
                           </div>
                           <div className="item-box-blog-text">
-                            <p>Built alongside June Adams with React, Node, and more! Dynamically displayed using re-usable components.</p>
+                            <p>An 8-bit style bird appreciated app. Built alongside June Adams with React, Node, and more! Dynamically displayed using re-usable components.</p>
                           </div>
                           <div className="mt">
                             <a href="https://github.com/juneadam/bird-app" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
@@ -94,9 +93,9 @@ function Carousel( {theme} ) {
                           </figure>
                         </div>
                         <div className="item-box-blog-body">
-                          <div className="item-box-blog-heading">
-                            <h5>10-day React game-making challenge!</h5>
-                          </div>
+                          {/* <div className="item-box-blog-heading">
+                            10-day React game-making challenge!
+                          </div> */}
                           <div className="item-box-blog-data">
                           </div>
                           <div className="item-box-blog-text">
