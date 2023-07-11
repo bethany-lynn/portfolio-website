@@ -16,12 +16,11 @@
 }
 
 .app-wrapper {
-  /* margin-top: 155px; */
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100vh - var(--navbar-height) - 155px);
+  height: calc(100vh - var(--navbar-height) - 100px);
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
 }
 

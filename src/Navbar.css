@@ -1,42 +1,49 @@
 .navbar {
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    z-index: 0;
-    margin-bottom: 100px;
-    background-color: transparent;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    padding: 20px;
-    font-size: 3rem;
-  }
-  
-  .navbar ul li {
-    display: inline-block;
-    position: relative;
-    padding-left: 35px;
-    margin-right: 90px;
-  }
-  
-  .navbar ul li::before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 30px;
-    height: 30px;
-    background-image: url(https://static.thenounproject.com/png/1670710-200.png);
-    background-size: cover;
-  }
-  
-  .navbar a {
-    text-decoration: underline;
-    color: white;
-  }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  z-index: 0;
+  margin-bottom: 100px;
+  background-color: transparent;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.navbar ul li {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 35px;
+  margin-right: 110px;
+  text-align: center;
+}
+
+.navbar ul li::before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 30px;
+  background-image: url(https://static.thenounproject.com/png/1670710-200.png);
+  background-size: cover;
+}
+
+.navbar a {
+  text-decoration: underline;
+  color: white;
+}
 
 .navbar button {
   background: transparent;
