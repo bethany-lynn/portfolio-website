@@ -23,7 +23,7 @@
 }
 
 .name {
-  font-family: Quicksand;
+  font-family: 'Press Start 2P', cursive;
   --bg-size: 400%;
   --color-one: hsl(220, 95%, 58%);
   --color-two: hsl(211, 100%, 53%);
@@ -32,7 +32,7 @@
   --color-five: hsl(129, 96%, 53%);
   --color-six: hsl(86, 94%, 67%);
   --color-seven: hsl(64, 100%, 59%);
-  font-size: clamp(4rem, 50vmin, 12rem);
+  font-size: clamp(3rem, 40vmin, 9rem);
   background: linear-gradient(
     90deg,
     var(--color-one),

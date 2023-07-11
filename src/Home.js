@@ -5,7 +5,7 @@ function Home({ appLogo }) {
   return (
     <div className="home-container">
         <div className="header-content">
-          <h1 className='name'>Bethany Bear</h1>
+          <h1 className='name'>Bethany Lynn</h1>
         </div>
       <div className="content-container-body">
         Full Stack Software Engineer {appLogo}
@@ -15,4 +15,3 @@ function Home({ appLogo }) {
 }
 
 export default Home;
-
