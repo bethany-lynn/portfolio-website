@@ -3,13 +3,7 @@
   place-items: center;
   align-content: center;
   overflow-y: auto;
-  min-height: 100vh;
-}
-
-.App-logo {
-  height: 12vmin;
-  pointer-events: none;
-  display: flex;
+  min-height: 275vh;
 }
 
 .pages {
@@ -22,9 +16,19 @@
 }
 
 .app-wrapper {
-  margin-top: 155px;
+  /* margin-top: 155px; */
   overflow-x: hidden;
+  overflow-y: auto;
   height: calc(100vh - var(--navbar-height) - 155px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.App-logo {
+  height: 12vmin;
+  pointer-events: none;
+  display: flex;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -42,16 +46,6 @@
   }
 }
 
-.App-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 15px;
-  font-size: calc(5px + 2vmin);
-  width: 50%;
-}
-
 .svg-button {
   background: none;
   border: none;
@@ -63,6 +57,16 @@
 .svg-button:focus {
   outline: none;
 }
+
+/* .App-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  font-size: calc(5px + 2vmin);
+  width: 50%;
+} */
 
 /* @media(prefers-reduced-motion) {
   .hidden {

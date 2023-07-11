@@ -1,6 +1,5 @@
 html, body {
   margin: 0;
-  /* height: 100%; */
   padding: 0;
   font-family: Quicksand;
 }
@@ -14,6 +13,6 @@ code {
   box-sizing: border-box;
 }
 
-body {
+/* body {
   overflow: hidden;
-}
+} */

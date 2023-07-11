@@ -107,20 +107,6 @@ function App() {
     }
   };
 
-  // const observer = new IntersectionObserver((entries) => {
-  //   entries.forEach((entry) => {
-  //     console.log(entry)
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add('show');
-  //     } else {
-  //       entry.target.classList.remove('show');
-  //     }
-  //   });
-  // });
-
-  // const hiddenElements = document.querySelectorAll('.hidden');
-  // hiddenElements.forEach((el) => observer.observe(el));
-
   const handleBoredClick = () => {
     changeTheme();
   };
@@ -131,7 +117,7 @@ function App() {
       <div className="app-wrapper">
         <div className="App">
           <div className="pages" id="section1">
-            <Home class="hidden" appLogo={(
+            <Home appLogo={(
               <button className="svg-button" onClick={handleBoredClick}>
                 <svg
                   className={`App-logo ${theme.logoClassName}`}
@@ -166,13 +152,13 @@ function App() {
             )} />
           </div>
           <div className="pages" id="section2">
-            <Projects class="hidden" theme={theme} />
+            <Projects theme={theme} />
           </div>
           <div className="pages" id="section3">
-            <CareerLore class="hidden" />
+            <CareerLore />
           </div>
           <div className="pages" id="section4">
-            <Resume class="hidden" />
+            <Resume />
           </div>
           <BottomBar />
           <br />
@@ -185,3 +171,18 @@ function App() {
 }
 
 export default App;
+
+
+  // const observer = new IntersectionObserver((entries) => {
+  //   entries.forEach((entry) => {
+  //     console.log(entry)
+  //     if (entry.isIntersecting) {
+  //       entry.target.classList.add('show');
+  //     } else {
+  //       entry.target.classList.remove('show');
+  //     }
+  //   });
+  // });
+
+  // const hiddenElements = document.querySelectorAll('.hidden');
+  // hiddenElements.forEach((el) => observer.observe(el));

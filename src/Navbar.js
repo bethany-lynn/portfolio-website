@@ -16,11 +16,3 @@ function Navbar({ handleScrollToSection }) {
 }
 
 export default Navbar;
-
-
-// squiggleColor,
-// import SquiggleSVG from './squiggle.svg';
-
-// <div className="squiggle-shape">
-// <img src={SquiggleSVG} alt='Squiggle' style={{ fill: squiggleColor }} />
-// </div>
