@@ -216,3 +216,28 @@ figure img {
     border-width: 4px;
     border-color: #a47e1b;
 }
+
+.item-box-blog-hover-theme6:hover {
+    border-width: 4px;
+    border-color: #4C230A;
+}
+
+.item-box-blog-hover-theme7:hover {
+    border-width: 4px;
+    border-color: #434C40;
+}
+
+.item-box-blog-hover-theme8:hover {
+    border-width: 4px;
+    border-color: white;
+}
+
+.item-box-blog-hover-theme9:hover {
+    border-width: 4px;
+    border-color:#A4587E;
+}
+
+.item-box-blog-hover-theme10:hover {
+    border-width: 4px;
+    border-color: #43AA8B
+}

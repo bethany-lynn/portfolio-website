@@ -17,6 +17,16 @@ function Carousel({ theme }) {
       return 'item-box-blog item-box-blog-hover-theme4';
     } else if (theme.name === 'Theme 5') {
       return 'item-box-blog item-box-blog-hover-theme5';
+    } else if (theme.name === 'Theme 6') {
+      return 'item-box-blog item-box-blog-hover-theme6';
+    } else if (theme.name === 'Theme 7') {
+      return 'item-box-blog item-box-blog-hover-theme7';
+    } else if (theme.name === 'Theme 8') {
+      return 'item-box-blog item-box-blog-hover-theme8';
+    } else if (theme.name === 'Theme 9') {
+      return 'item-box-blog item-box-blog-hover-theme9';
+    } else if (theme.name === 'Theme 10') {
+      return 'item-box-blog item-box-blog-hover-theme10';
     } else {
       return 'item-box-blog';
     }
