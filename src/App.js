@@ -185,5 +185,3 @@ function App() {
 }
 
 export default App;
-
-// squiggleColor={theme.squiggleColor}

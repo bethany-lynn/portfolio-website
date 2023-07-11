@@ -2,7 +2,8 @@
   display: grid;
   place-items: center;
   align-content: center;
-  /* min-height: 20vh; */
+  overflow-y: auto;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -16,13 +17,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - <navbar-height>);
+  overflow-y: auto;
+  max-height: calc(100vh - var(--navbar-height));
 }
 
 .app-wrapper {
   margin-top: 155px;
   overflow-x: hidden;
-  height: calc(90vh - <navbar-height>);
+  height: calc(100vh - var(--navbar-height) - 155px);
 }
 
 @media (prefers-reduced-motion: no-preference) {

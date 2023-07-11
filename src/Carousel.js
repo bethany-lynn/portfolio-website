@@ -1,7 +1,10 @@
 import React from 'react';
 import './Carousel.css';
+import birddex from './images/birddex.png'
+import fantasydungeon from './images/fantasydungeon.PNG'
+import reactjam from './images/reactjam.PNG'
 
-function Carousel( {theme} ) {
+function Carousel({ theme }) {
 
   const getItemBoxBlogClassName = () => {
     if (theme.name === 'Theme 1') {
@@ -18,7 +21,7 @@ function Carousel( {theme} ) {
       return 'item-box-blog';
     }
   };
-  
+
   return (
     <div className="carousel-container">
       <div className="container-fluid">
@@ -35,13 +38,10 @@ function Carousel( {theme} ) {
                             <span className="mon">Fantasy Dungeon</span>
                           </div>
                           <figure>
-                            <img alt="" src="https://i.pinimg.com/originals/2b/e1/7b/2be17bdcd142435f192c159c4c49a698.jpg" />
+                            <img alt="" src={fantasydungeon} />
                           </figure>
                         </div>
                         <div className="item-box-blog-body">
-                          {/* <div className="item-box-blog-heading">
-                            Character Customization - D&D
-                          </div> */}
                           <div className="item-box-blog-data">
                           </div>
                           <div className="item-box-blog-text">
@@ -49,7 +49,7 @@ function Carousel( {theme} ) {
                           </div>
                           <div className="mt">
                             <a href="https://github.com/bethany-lynn/dnd-character-creation" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
-                              GH Link
+                              GitHub Link
                             </a>
                           </div>
                         </div>
@@ -62,13 +62,10 @@ function Carousel( {theme} ) {
                             <span className="mon">Bird-Dex</span>
                           </div>
                           <figure>
-                            <img alt="" src="https://cdn.donmai.us/sample/02/90/__hatsune_miku_and_sakura_miku_vocaloid_drawn_by_kenouo__sample-02905dc2a2672ddb5916ccd9436dfc68.jpg" />
+                            <img alt="" src={birddex} />
                           </figure>
                         </div>
                         <div className="item-box-blog-body">
-                          {/* <div className="item-box-blog-heading">
-                            8-bit Style Bird Appreciation App
-                          </div> */}
                           <div className="item-box-blog-data">
                           </div>
                           <div className="item-box-blog-text">
@@ -76,7 +73,7 @@ function Carousel( {theme} ) {
                           </div>
                           <div className="mt">
                             <a href="https://github.com/juneadam/bird-app" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
-                              GH Link
+                              GitHub Link
                             </a>
                           </div>
                         </div>
@@ -89,21 +86,18 @@ function Carousel( {theme} ) {
                             <span className="mon">React Jam</span>
                           </div>
                           <figure>
-                            <img alt="" src="https://s1.zerochan.net/Hatsune.Miku.600.1758915.jpg" />
+                            <img alt="" src={reactjam} />
                           </figure>
                         </div>
                         <div className="item-box-blog-body">
-                          {/* <div className="item-box-blog-heading">
-                            10-day React game-making challenge!
-                          </div> */}
                           <div className="item-box-blog-data">
                           </div>
                           <div className="item-box-blog-text">
                             <p>Currently preparing for the annual React Jam to make an small game in 10 days! Possible screen-scoller, point collector!</p>
                           </div>
                           <div className="mt">
-                            <a href="https://github.com/juneadam/css-sandbox-react" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
-                              GH Link
+                            <a href="https://reactjam.com/" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
+                              GitHub Link
                             </a>
                           </div>
                         </div>
