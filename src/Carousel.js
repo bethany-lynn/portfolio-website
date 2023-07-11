@@ -115,10 +115,6 @@ function Carousel({ theme }) {
                     </div>
                   </div>
                 </div>
-                <div className="carousel-item">
-                  <div className="row">
-                  </div>
-                </div>
               </div>
             </div>
           </div>
