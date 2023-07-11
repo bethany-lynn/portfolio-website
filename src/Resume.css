@@ -1,11 +1,33 @@
-.resume-body,
-resume-body .h1 {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 70vh;
-    color: black;
-  }
+.resume-body {
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  color: black;
+}
+
+.resume-body iframe {
+  margin-bottom: 20px;
+}
+
+.resume-body .download-button {
+  margin-top: 20px;
+}
+
+.resume-body .download-button button {
+  background-color: #000000;
+  color: white;
+  padding: 30px 60px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+}
+
+.resume-body .download-button button:hover {
+  background-color: rgb(35, 39, 57);
+}

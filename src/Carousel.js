@@ -35,7 +35,7 @@ function Carousel({ theme }) {
                       <div className={getItemBoxBlogClassName()}>
                         <div className="item-box-blog-image">
                           <div className="item-box-blog-date bg-blue-ui white">
-                            <span className="mon">Fantasy Dungeon</span>
+                            <span className="mon">Fantasy<br/>Dungeon</span>
                           </div>
                           <figure>
                             <img alt="" src={fantasydungeon} />
