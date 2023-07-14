@@ -99,22 +99,22 @@ function App() {
     },
     {
       name: 'Theme 7',
-      backgroundColor: 'conic-gradient(from 90deg at top right, #CED0CE, #9FB8AD)',
+      backgroundColor: 'conic-gradient(from 90deg at top right, #a4ac86, #656d4a)',
       textColor: '#3F403F',
       itemBoxBlogHover: {
         borderWidth: '4px',
         borderColor: '#434C40'
       },
       logoColors: {
-        fill: '#3F403F',
-        stroke: '#76520e',
+        fill: '#c2c5aa',
+        stroke: '#656d4a',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
       }
     },
     {
       name: 'Theme 8',
-      backgroundColor: 'conic-gradient(from 90deg at top right, #000103, #29292B)',
+      backgroundColor: 'conic-gradient(from 90deg at top right, #9a8c98, #8d99ae)',
       textColor: 'white',
       itemBoxBlogHover: {
         borderWidth: '4px',
@@ -122,7 +122,7 @@ function App() {
       },
       logoColors: {
         fill: 'white',
-        stroke: '#76520e',
+        stroke: '#22223b',
         iconFill: '#B0CA87',
         iconStroke: '#B0CA87'
       }
