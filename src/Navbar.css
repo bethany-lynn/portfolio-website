@@ -17,14 +17,7 @@
   display: flex;
   justify-content: center;
   width: 75%;
-  border: 5px solid black;
-  background-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.26),
-    rgba(71, 71, 71, 0.669),
-    rgba(0, 0, 0, 0.26)
-  );
+  border: 5px solid;
   border-radius: 50px 50px 50px 50px;
 }
 
@@ -58,6 +51,7 @@
 
 .navbar ul li button:hover {
   color: rgb(0, 0, 0);
+  font-weight: bold;
   text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);;
 }
 
@@ -67,4 +61,5 @@
   padding: 0;
   outline: none;
   cursor: pointer;
+  text-transform: uppercase;
 }
