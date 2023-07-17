@@ -4,9 +4,20 @@
   left: 0;
   width: 100%;
   display: flex;
+  padding: 70px;
   justify-content: center;
   z-index: 1;
   margin-bottom: 100px;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 35px;
+  font-size: 2.5rem;
+  display: flex;
+  justify-content: center;
+  width: 75%;
+  border: 5px solid black;
   background-color: transparent;
   background-image: linear-gradient(
     to right,
@@ -14,16 +25,7 @@
     rgba(71, 71, 71, 0.669),
     rgba(0, 0, 0, 0.26)
   );
-  border-radius: 0 0 50px 50px;
-}
-
-.navbar ul {
-  list-style: none;
-  padding: 0;
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  width: 100%;
+  border-radius: 50px 50px 50px 50px;
 }
 
 .navbar ul li {
@@ -31,7 +33,7 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin-right: 110px;
+  margin-right: 90px;
   text-align: center;
   color: white;
 }
@@ -55,8 +57,8 @@
 }
 
 .navbar ul li button:hover {
-  color: rgb(255, 255, 255);
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+  color: rgb(0, 0, 0);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);;
 }
 
 .navbar button {
