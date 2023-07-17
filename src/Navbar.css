@@ -8,6 +8,13 @@
   z-index: 1;
   margin-bottom: 100px;
   background-color: transparent;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.26),
+    rgba(71, 71, 71, 0.669),
+    rgba(0, 0, 0, 0.26)
+  );
+  border-radius: 0 0 50px 50px;
 }
 
 .navbar ul {
@@ -24,9 +31,9 @@
   align-items: center;
   flex-direction: column;
   position: relative;
-  /* padding-left: 35px; */
   margin-right: 110px;
   text-align: center;
+  color: white;
 }
 
 .navbar ul li::before {
@@ -48,7 +55,7 @@
 }
 
 .navbar ul li button:hover {
-  color: white;
+  color: rgb(255, 255, 255);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
 }
 
