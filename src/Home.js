@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+// import myFace from '.jpg'
 
 function Home({ appLogo }) {
   return (
@@ -12,6 +13,7 @@ function Home({ appLogo }) {
         <br />
         <div className='email'>
           bethanylynnpro@gmail.com
+          {/* <img src={myFace} alt='Bethanys face' className='my-image' /> */}
         </div> {appLogo}
       </div>
     </div>

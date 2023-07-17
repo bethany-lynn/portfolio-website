@@ -22,8 +22,9 @@
 .navbar ul li {
   display: flex;
   align-items: center;
+  flex-direction: column;
   position: relative;
-  padding-left: 35px;
+  /* padding-left: 35px; */
   margin-right: 110px;
   text-align: center;
 }
@@ -31,22 +32,30 @@
 .navbar ul li::before {
   content: "";
   position: absolute;
-  left: -15px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
   width: 30px;
   height: 30px;
   background-image: url(https://static.thenounproject.com/png/1670710-200.png);
   background-size: cover;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
 }
 
-.navbar a {
-  text-decoration: underline;
+.navbar ul li:hover::before {
+  opacity: 1;
+}
+
+.navbar ul li button:hover {
   color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
 }
 
 .navbar button {
   background: transparent;
-  border: none;
+  border: transparent;
   padding: 0;
+  outline: none;
+  cursor: pointer;
 }
