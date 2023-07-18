@@ -2,6 +2,7 @@
   background-color: var(--background);
   display: block;
   width: 90%;
+  max-width: 1900px;
   min-height: 90px;
   cursor: pointer;
   padding: 15px;
@@ -12,6 +13,15 @@
     30px -30px 0 -3px var(--background), 30px -30px var(--orange),
     40px -40px 0 -3px var(--background), 40px -40px var(--red),
     0 0 0 3px var(--primary);
+    border-radius: 2%;
+}
+
+/* Cards responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .card {
+    min-height: 70px;
+    padding: 10px;
+  }
 }
 
 .card:hover {

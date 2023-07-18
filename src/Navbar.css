@@ -63,3 +63,16 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+
+@media screen and (max-width: 768px) {
+  .navbar ul {
+    padding: 70px;
+  }
+}
+
+/* Add media query for larger screens */
+@media screen and (min-width: 1200px) {
+  .navbar ul {
+    max-width: 1700px;
+  }
+}
