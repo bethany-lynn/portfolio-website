@@ -59,7 +59,7 @@ function Carousel({ theme }) {
                           </div>
                           <div className="mt">
                             <a href="https://github.com/bethany-lynn/dnd-character-creation" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
-                              GitHub Link
+                              Check it out!
                             </a>
                           </div>
                         </div>
@@ -83,7 +83,7 @@ function Carousel({ theme }) {
                           </div>
                           <div className="mt">
                             <a href="https://github.com/juneadam/bird-app" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
-                              GitHub Link
+                              Check it out!
                             </a>
                           </div>
                         </div>
@@ -107,7 +107,7 @@ function Carousel({ theme }) {
                           </div>
                           <div className="mt">
                             <a href="https://reactjam.com/" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
-                              GitHub Link
+                              Check it out!
                             </a>
                           </div>
                         </div>

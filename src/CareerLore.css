@@ -1,11 +1,12 @@
 .card {
   background-color: var(--background);
   display: block;
-  width: 90%;
+  width: 70%;
   max-width: 1900px;
-  min-height: 90px;
+  min-height: 50px;
+  max-height: 870px;
   cursor: pointer;
-  padding: 15px;
+  padding: 25px;
   border: 3px solid var(--primary);
   box-shadow: 
     10px -10px 0 -3px var(--background), 10px -10px var(--green),
@@ -16,10 +17,9 @@
     border-radius: 2%;
 }
 
-/* Cards responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
   .card {
-    min-height: 70px;
+    min-height: 50px;
     padding: 10px;
   }
 }
@@ -84,15 +84,15 @@
 } 
 
 .card-content {
-  font-size: 29px;
+  font-size: 12px;
   letter-spacing: 0.5px;
-  margin-bottom: 17px;
+  margin-bottom: 20px;
   text-align: center;
   color: black;
 }
 
 .card-title {
-  font-size: 40px;
+  font-size: 18px;
   text-transform: uppercase;
   font-weight: normal;
   margin-top: 20px;

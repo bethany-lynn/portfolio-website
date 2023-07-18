@@ -4,7 +4,7 @@ import Home from './Home';
 import Projects from './Projects';
 import CareerLore from './CareerLore';
 import Resume from './Resume';
-import BottomBar from './BottomBar';
+// import BottomBar from './BottomBar';
 import './App.css';
 
 
@@ -271,7 +271,7 @@ function App() {
           <div className="pages" id="section4">
             <Resume />
           </div>
-          <BottomBar />
+          {/* <BottomBar /> */}
           <br />
           <br />
           <br />
@@ -282,18 +282,3 @@ function App() {
 }
 
 export default App;
-
-
-  // const observer = new IntersectionObserver((entries) => {
-  //   entries.forEach((entry) => {
-  //     console.log(entry)
-  //     if (entry.isIntersecting) {
-  //       entry.target.classList.add('show');
-  //     } else {
-  //       entry.target.classList.remove('show');
-  //     }
-  //   });
-  // });
-
-  // const hiddenElements = document.querySelectorAll('.hidden');
-  // hiddenElements.forEach((el) => observer.observe(el));
