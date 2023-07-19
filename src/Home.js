@@ -2,7 +2,9 @@ import React from 'react';
 import './Home.css';
 import myFace from './images/self.jpg'
 
-function Home({ appLogo }) {
+function Home({ appLogo, theme }) {
+
+  const selfPicture = theme.picture || myFace;
   return (
     <div className="home-container">
       <div className="header-content">
@@ -33,7 +35,7 @@ function Home({ appLogo }) {
           </div>
         </div>
         <div className="column-two">
-          <img src={myFace} alt="Bethany's face" />
+          <img src={selfPicture} alt="Bethany's face" />
         </div>
       </div>
     </div>

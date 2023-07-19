@@ -82,7 +82,7 @@ function Carousel({ theme }) {
                             <p>An 8-bit style bird appreciated app. Built alongside June Adams with React, Node, and more! Dynamically displayed using re-usable components.</p>
                           </div>
                           <div className="mt">
-                            <a href="https://github.com/juneadam/bird-app" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
+                            <a href="https://bird-dex.fly.dev/" className="btn bg-blue-ui white read" rel="noopener noreferrer" target="_blank">
                               Check it out!
                             </a>
                           </div>

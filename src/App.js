@@ -4,8 +4,18 @@ import Home from './Home';
 import Projects from './Projects';
 import CareerLore from './CareerLore';
 import Resume from './Resume';
-// import BottomBar from './BottomBar';
 import './App.css';
+
+import selfImage from './images/self.jpg';
+import meelfImage from './images/meelf.jpg';
+import bluehairImage from './images/bluehair.png';
+import maxandmeImage from './images/maxandme.jpg';
+import mamasatoruImage from './images/mamasatoru.jpg';
+import squirrelImage from './images/squirrel.jpg';
+import megreenImage from './images/megreen.PNG';
+import bwselfieImage from './images/bwselfie.jpg';
+import bwoliverImage from './images/bwoliver.jpg';
+import littlemecomputerImage from './images/littlemecomputer.jpg';
 
 
 
@@ -15,6 +25,7 @@ function App() {
       name: 'Theme 1',
       backgroundColor: 'conic-gradient(from 90deg at top right, #CB48B7, floralwhite)',
       textColor: '#934683',
+      picture: selfImage,
       navbarColors: {
         backgroundColor: 'rgb(253, 109, 255)',
         borderColor: '#fd65f8',
@@ -30,6 +41,7 @@ function App() {
       name: 'Theme 2',
       backgroundColor: 'conic-gradient(from 90deg at top right, #98E2C6, #C1FF9B)',
       textColor: '#2D3319',
+      picture: meelfImage,
       navbarColors: {
         backgroundColor: '#3EF496',
         borderColor: '#41cb52',
@@ -49,6 +61,7 @@ function App() {
       name: 'Theme 3',
       backgroundColor: 'conic-gradient(from 90deg at top right, cyan, rebeccapurple)',
       textColor: '#F0EFF4E0DE',
+      picture: bluehairImage,
       navbarColors: {
         backgroundColor: '#C6FAF0',
         borderColor: '#4de7ff',
@@ -68,6 +81,7 @@ function App() {
       name: 'Theme 4',
       backgroundColor: 'conic-gradient(from 90deg at top right, #e7c6ff, #5863F8)',
       textColor: '#c8b6ff',
+      picture: maxandmeImage,
       navbarColors: {
         backgroundColor: '#AD5CFF',
         borderColor: '#c8b6ff',
@@ -87,6 +101,7 @@ function App() {
       name: 'Theme 5',
       backgroundColor: 'conic-gradient(from 90deg at top right, #f4eea9, #f4f482)',
       textColor: '#a47e1b',
+      picture: mamasatoruImage,
       navbarColors: {
         backgroundColor: '#FFC60A',
         borderColor: '#a47e1b',
@@ -106,6 +121,7 @@ function App() {
       name: 'Theme 6',
       backgroundColor: 'conic-gradient(from 90deg at top right, #D9CAB3, #8C7A6B)',
       textColor: '#BC8034',
+      picture: squirrelImage,
       navbarColors: {
         backgroundColor: '#605C4E',
         borderColor: '#4C230A',
@@ -125,6 +141,7 @@ function App() {
       name: 'Theme 7',
       backgroundColor: 'conic-gradient(from 90deg at top right, #a4ac86, #656d4a)',
       textColor: '#3F403F',
+      picture: megreenImage,
       navbarColors: {
         backgroundColor: '#3E6259',
         borderColor: '#212922',
@@ -144,6 +161,7 @@ function App() {
       name: 'Theme 8',
       backgroundColor: 'conic-gradient(from 90deg at top right, #9a8c98, #8d99ae)',
       textColor: 'white',
+      picture: bwselfieImage,
       navbarColors: {
         backgroundColor: '#434A42',
         borderColor: '#22223b',
@@ -163,6 +181,7 @@ function App() {
       name: 'Theme 9',
       backgroundColor: 'conic-gradient(from 90deg at top right, #993955, #AE76A6)',
       textColor: '#A3C3D9',
+      picture: bwoliverImage,
       navbarColors: {
         backgroundColor: '#536B78',
         borderColor: '#A4587E',
@@ -182,6 +201,7 @@ function App() {
       name: 'Theme 10',
       backgroundColor: 'conic-gradient(from 90deg at top right, #FF6F59, #DB504A)',
       textColor: '#43AA8B',
+      picture: littlemecomputerImage,
       navbarColors: {
         backgroundColor: '#F89F5F',
         borderColor: '#43AA8B',
@@ -260,7 +280,7 @@ function App() {
                   </g>
                 </svg>
               </button>
-            )} />
+            )} theme={theme} />
           </div>
           <div className="pages" id="section2">
             <Projects theme={theme} />
