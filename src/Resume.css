@@ -6,7 +6,7 @@
   justify-content: center;
   text-align: center;
   height: 80vh;
-  color: black;
+  color: rgba(0, 0, 0, 0.826);
 }
 
 .resume-body iframe {
@@ -30,4 +30,27 @@
 
 .resume-body .download-button button:hover {
   background-color: rgb(35, 39, 57);
+}
+
+@media screen and (max-width: 768px) {
+  .resume-body {
+    height: auto;
+    padding: 10px;
+    height: 70vh;
+    width: 85%;
+    overflow-x: auto;
+  }
+  
+  .resume-body iframe {
+    margin-bottom: 10px;
+  }
+  
+  .resume-body .download-button {
+    margin-top: 10px;
+  }
+  
+  .resume-body .download-button button {
+    padding: 8px 40px;
+    font-size: 16px;
+  }
 }
