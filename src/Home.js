@@ -11,8 +11,8 @@ function Home({ appLogo, theme, themeIndex }) {
       <div className="header-content">
         <h1 className="name">Bethany Winter</h1>
       </div>
-      <div className="content-container-box">
-        <div className="column-one">
+      <div className="row content-container-box">
+        <div className="col-md column-one">
           <div className="job-title">
             Full Stack Software Engineer
             <br />
@@ -37,7 +37,7 @@ function Home({ appLogo, theme, themeIndex }) {
             {appLogo}
           </div>
         </div>
-        <div className="column-two">
+        <div className="col-md column-two">
           <div className="theme-photo-container">
             <img
               src={selfPicture}

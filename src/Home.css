@@ -10,106 +10,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .content-container-box {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 80px;
-}
-
-.column-one {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 50px;
-}
-
-.job-title {
-  display: flex;
-  font-size: 1.5rem;
-  align-items: center;
-  justify-content: center;
-  font-weight: 600;
-  text-align: center;
-}
-
-.email {
-  display: flex;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.applogo {
-  display: flex;
-  justify-content: center;
-}
-
-.column-two {
-  display: flex;
-  justify-content: center;
-}
-
-.column-two img {
-  width: 275px;
-  object-fit: cover;
-  border-radius: 20%;
-  border: 2px solid black;
-  align-items: center;
-}
-
-.linkedin img {
-  width: 50px;
-  height: 50px;
-  filter: brightness(0);
-}
-
-.github img {
-  width: 50px;
-  height: 50px;
-  filter: brightness(0);
-}
-
-.linkedin a {
-  margin: 0 10px;
-}
-
-.github a {
-  margin: 0 10px;
-}
-
-.linkedin {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.github {
-  position: relative;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-}
-
-.link-container {
-  margin-top: 15px;
-  display: flex;
-  gap: 10px;
-}
-
-.github:hover, .linkedin:hover {
-  transform: scale(1.3);
-  color: rgb(255, 255, 255);
 }
 
 .name {
@@ -143,6 +52,72 @@
   animation: move-bg 10s infinite linear;
 }
 
+.column-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.job-title, .email {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  text-align: center;
+}
+
+.applogo {
+  display: flex;
+  justify-content: center;
+}
+
+.column-two {
+  display: flex;
+  justify-content: center;
+}
+
+.column-two img {
+  width: 275px;
+  object-fit: cover;
+  border-radius: 20%;
+  border: 2px solid black;
+  align-items: center;
+}
+
+.link-container {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.linkedin img, .github img  {
+  width: 50px;
+  height: 50px;
+  filter: brightness(0);
+}
+
+.linkedin a, .github a {
+  margin: 0 10px;
+}
+
+.linkedin, .github {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.github:hover, .linkedin:hover {
+  transform: scale(1.3);
+  color: rgb(255, 255, 255);
+}
+
 @keyframes move-bg {
   0% {
     background-position: 0% 0;
@@ -156,6 +131,10 @@
 .theme-photo-container {
   position: relative;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* overflow: hidden; */
 }
 
 .theme-text {
@@ -187,8 +166,36 @@
   border-width: thick;
 }
 
-@media (max-width: 1500px) and (min-resolution: 200dpi), (max-width: 2000px) and (min-resolution: 2dppx) {
+@media (max-width: 1250px) and (min-resolution: 200dpi), (max-width: 2000px) and (min-resolution: 2dppx) {
   .name {
     font-size: clamp(1.5rem, 10vw, 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 20px;
+  }
+
+  .content-container-box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 10px;
+  }
+
+  .content-container-box {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .column-one,
+  .column-two {
+    width: 100%;
   }
 }

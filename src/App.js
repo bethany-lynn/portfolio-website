@@ -17,8 +17,6 @@ import bwselfieImage from './images/bwselfie.jpg';
 import bwoliverImage from './images/bwoliver.jpg';
 import littlemecomputerImage from './images/littlemecomputer.jpg';
 
-
-
 function App() {
   const themes = [
     {

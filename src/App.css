@@ -59,3 +59,29 @@
 .svg-button:hover {
   transform: scale(1.3);
 }
+
+
+@media (max-width: 768px) {
+  .pages {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pages {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 600px) {
+  .app-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pages {
+    width: 100%;
+    max-width: 600px;
+  }
+}
