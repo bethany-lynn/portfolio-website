@@ -33,6 +33,7 @@
   align-items: center;
   justify-content: center;
   font-weight: 600;
+  text-align: center;
 }
 
 .email {
@@ -145,4 +146,38 @@
   100% {
     background-position: 100% 0;
   }
+}
+
+.theme-photo-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 12px 24px;
+  border-radius: 20%;
+  border-width: thick;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  text-align: center;
+}
+
+.theme-photo-container:hover .theme-text {
+  opacity: 5;
+  padding: 12px 24px;
+  border-color: rgb(255, 255, 255);
+  border-width: thick;
 }

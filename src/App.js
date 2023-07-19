@@ -26,6 +26,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #CB48B7, floralwhite)',
       textColor: '#934683',
       picture: selfImage,
+      text: 'C2E2 2020: Purchased my first face mask at my last convention for years.',
       navbarColors: {
         backgroundColor: 'rgb(253, 109, 255)',
         borderColor: '#fd65f8',
@@ -42,6 +43,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #98E2C6, #C1FF9B)',
       textColor: '#2D3319',
       picture: meelfImage,
+      text: 'First Renaissance Faire in 2023! Elf, pirate, fairy combo?',
       navbarColors: {
         backgroundColor: '#3EF496',
         borderColor: '#41cb52',
@@ -62,6 +64,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, cyan, rebeccapurple)',
       textColor: '#F0EFF4E0DE',
       picture: bluehairImage,
+      text: 'I feel more confident about my selfies when they are in pixels.',
       navbarColors: {
         backgroundColor: '#C6FAF0',
         borderColor: '#4de7ff',
@@ -82,6 +85,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #e7c6ff, #5863F8)',
       textColor: '#c8b6ff',
       picture: maxandmeImage,
+      text: 'My loyal partner, Max, at the Ren Faire with me in his bard-garb.',
       navbarColors: {
         backgroundColor: '#AD5CFF',
         borderColor: '#c8b6ff',
@@ -102,6 +106,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #f4eea9, #f4f482)',
       textColor: '#a47e1b',
       picture: mamasatoruImage,
+      text: 'My sweet puppy Satoru Huan, wriggling out of my arms. He has grown much since this. I live in white fur.',
       navbarColors: {
         backgroundColor: '#FFC60A',
         borderColor: '#a47e1b',
@@ -122,6 +127,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #D9CAB3, #8C7A6B)',
       textColor: '#BC8034',
       picture: squirrelImage,
+      text: 'I checked off a major box on my bucket list when this squirrel ate out of my hand in DC. I would love to go back, even just for the squirrels.',
       navbarColors: {
         backgroundColor: '#605C4E',
         borderColor: '#4C230A',
@@ -142,6 +148,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #a4ac86, #656d4a)',
       textColor: '#3F403F',
       picture: megreenImage,
+      text: 'One of the many phases of my forever-color-changing hair. Truly, though, green is the best color.',
       navbarColors: {
         backgroundColor: '#3E6259',
         borderColor: '#212922',
@@ -162,6 +169,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #9a8c98, #8d99ae)',
       textColor: 'white',
       picture: bwselfieImage,
+      text: ' "Wow, I actually like this selfie, what a surpise!" - I said to Max after he took this.',
       navbarColors: {
         backgroundColor: '#434A42',
         borderColor: '#22223b',
@@ -181,6 +189,7 @@ function App() {
       name: 'Theme 9',
       backgroundColor: 'conic-gradient(from 90deg at top right, #993955, #AE76A6)',
       textColor: '#A3C3D9',
+      text: 'Young me and my sweet doggy, Oliver. A good boy that will always be with me.',
       picture: bwoliverImage,
       navbarColors: {
         backgroundColor: '#536B78',
@@ -202,6 +211,7 @@ function App() {
       backgroundColor: 'conic-gradient(from 90deg at top right, #FF6F59, #DB504A)',
       textColor: '#43AA8B',
       picture: littlemecomputerImage,
+      text: 'I have been beepin and boopin since butterfly clips were cool the first time.',
       navbarColors: {
         backgroundColor: '#F89F5F',
         borderColor: '#43AA8B',
@@ -291,7 +301,6 @@ function App() {
           <div className="pages" id="section4">
             <Resume />
           </div>
-          {/* <BottomBar /> */}
           <br />
           <br />
           <br />

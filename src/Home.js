@@ -2,9 +2,10 @@ import React from 'react';
 import './Home.css';
 import myFace from './images/self.jpg'
 
-function Home({ appLogo, theme }) {
+function Home({ appLogo, theme, themeIndex }) {
 
   const selfPicture = theme.picture || myFace;
+
   return (
     <div className="home-container">
       <div className="header-content">
@@ -14,6 +15,8 @@ function Home({ appLogo, theme }) {
         <div className="column-one">
           <div className="job-title">
             Full Stack Software Engineer
+            <br />
+            San Diego, CA
           </div>
           <div className="email">
             bethanylynnpro@gmail.com
@@ -35,7 +38,16 @@ function Home({ appLogo, theme }) {
           </div>
         </div>
         <div className="column-two">
-          <img src={selfPicture} alt="Bethany's face" />
+          <div className="theme-photo-container">
+            <img
+              src={selfPicture}
+              alt={`Theme ${themeIndex +1}`}
+              className="theme-photo"
+            />
+            <div className="theme-text">
+              {theme.text}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -43,3 +55,14 @@ function Home({ appLogo, theme }) {
 }
 
 export default Home;
+
+
+// const email = 'bethanylynnpro@gmail.com';
+// <a className="email" href={`mailto:${email}`}>
+// {email}
+// </a>
+
+// old photo working code:
+// <div className="column-two">
+// <img src={selfPicture} alt="Bethany's face" />
+// </div>
