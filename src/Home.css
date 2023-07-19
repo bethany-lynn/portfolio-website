@@ -107,6 +107,11 @@
   gap: 10px;
 }
 
+.github:hover, .linkedin:hover {
+  transform: scale(1.3);
+  color: rgb(255, 255, 255);
+}
+
 .name {
   font-family: 'Press Start 2P', cursive;
   --bg-size: 400%;
