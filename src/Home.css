@@ -186,3 +186,9 @@
   border-color: rgb(255, 255, 255);
   border-width: thick;
 }
+
+@media (max-width: 1500px) and (min-resolution: 200dpi), (max-width: 2000px) and (min-resolution: 2dppx) {
+  .name {
+    font-size: clamp(1.5rem, 10vw, 2rem);
+  }
+}
