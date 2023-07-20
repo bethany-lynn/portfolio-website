@@ -41,7 +41,7 @@ function Home({ appLogo, theme, themeIndex }) {
           <div className="theme-photo-container">
             <img
               src={selfPicture}
-              alt={`Theme ${themeIndex +1}`}
+              alt={`Theme ${themeIndex + 1}`}
               className="theme-photo"
             />
             <div className="theme-text">
