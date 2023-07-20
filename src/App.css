@@ -4,23 +4,31 @@
   align-content: center;
   overflow-y: auto;
   min-height: 275vh;
+  @media (max-width: 300px) {
+    place-items: start;
+    align-content: flex-start;
+  }
+
 }
 
 .pages {
+  padding: 20px;
+  min-height: calc(100vh - var(--navbar-height) -100px);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow-y: auto;
-  max-height: calc(100vh - var(--navbar-height));
+  /* max-height: calc(100vh - var(--navbar-height)); */
 }
 
 .app-wrapper {
   overflow-x: hidden;
   overflow-y: auto;
-  height: calc(100vh - var(--navbar-height) - 100px);
+  height: calc(100vh - var(--navbar-height));
   display: flex;
   justify-content: center;
+  padding-top: var(--navbar-height);
 }
 
 .App-logo {
@@ -62,8 +70,14 @@
 
 
 @media (max-width: 768px) {
+  .app-wrapper {
+    flex-direction: column; /* Stack the components vertically on smaller screens */
+    align-items: center; /* Center the components horizontally */
+    padding-top: calc(var(--navbar-height) + 20px); /* Add some spacing between navbar and components */
+  }
   .pages {
-    padding: 10px;
+    width: 100%;
+    max-width: 600px;
   }
 }
 
@@ -83,5 +97,34 @@
   .pages {
     width: 100%;
     max-width: 600px;
+  }
+}
+
+@media (max-width: 300px) {
+  .app-wrapper {
+    padding-top: var(--navbar-height);
+    flex-direction: column; /* Stack the components vertically on smaller screens */
+    align-items: center;
+  }
+
+  .pages {
+    margin-top: 50px;
+    height: auto;
+    max-height: none;
+  }
+  .pages > * {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 50px;
+  }
+  .pages > * + * {
+    margin-top: 50px;
+  }
+  .navbar {
+    z-index: 3;
+    margin-bottom: 10px;
+  }
+  .section1 {
+    margin-top: 30px;
   }
 }

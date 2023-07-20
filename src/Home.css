@@ -4,6 +4,12 @@
   align-items: center;
   justify-items: center;
   gap: 20px;
+  height: calc(100vh - var(--navbar-height));
+  @media (max-width: 600px) {
+    padding-top: 120px;
+    position: relative;
+    top: var(--navbar-height);
+  }
 }
 
 .header-content {
@@ -32,6 +38,7 @@
   --color-six: hsl(86, 94%, 67%);
   --color-seven: hsl(64, 100%, 59%);
   font-size: clamp(1.75rem, 10vw, 4rem);
+  line-height: 1.2;
   background: linear-gradient(90deg,
       var(--color-one),
       var(--color-two),
@@ -50,6 +57,15 @@
   background-clip: text;
   -webkit-background-clip: text;
   animation: move-bg 10s infinite linear;
+  @media (max-width: 768px) {
+    padding-top: 80px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: .9rem;
+  }
 }
 
 .column-one {
@@ -67,6 +83,9 @@
   justify-content: center;
   font-weight: 600;
   text-align: center;
+  @media (max-width: 300px) {
+    font-size: 12px;
+  }
 }
 
 .applogo {
@@ -134,7 +153,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  /* overflow: hidden; */
 }
 
 .theme-text {

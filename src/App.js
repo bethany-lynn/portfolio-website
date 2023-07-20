@@ -31,7 +31,7 @@ function App() {
       },
       logoColors: {
         fill: '#f7cad0',
-        stroke: '#ffd6ff',
+        stroke: '#CB48B7',
         iconFill: '#9A48D0',
         iconStroke: '#9A48D0'
       }
